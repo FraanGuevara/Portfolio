@@ -1,0 +1,96 @@
+/* Variables */
+$color__texto--grid : white;
+
+
+/* Mixin para textos */
+@mixin textoHome ($grid-area) {
+    grid-area: $grid-area;
+        margin: 2px;
+        overflow: hidden;
+        transition: all .6s ease;
+        /* Animacion */
+        &:hover{
+            transform: scale(1.20);
+            z-index: 300;
+        }
+}
+
+.home{
+    color: $color__texto--grid;
+    margin-top: 10%;
+    /* Grid para textos */
+    &__container{
+        display: grid;
+        grid-template-areas:
+        "texto1 texto1 texto1 texto1 texto5 texto5 texto7 texto7"
+        "texto2 texto2 texto2 texto2 texto5 texto5 texto6 texto6"
+        "texto3 texto3 texto4 texto4 texto4 texto4 texto6 texto6" ;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr ;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        /* textos */
+        &--text1{
+            @include textoHome(texto1);
+            font-size: 5vw;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        &--text2{
+            @extend .home__container--text1;
+            @include textoHome(texto2);
+            font-family:"Sedgwick Ave";
+        }
+        &--text3{
+            @extend .home__container--text1;
+            @include textoHome(texto3);
+            font-family:"fantasy";
+        }
+        &--text4{
+            @extend .home__container--text1;
+            @include textoHome(texto4);
+            font-family:"Cedarville Cursive";
+        }
+        &--text5{
+            @extend .home__container--text1;
+            @include textoHome(texto5);
+            font-family:"Anton";
+        }
+        &--text6{
+            @extend .home__container--text1;
+            @include textoHome(texto6);
+            font-family:'Raleway', 'Lucida Sans Unicode', 'Lucida   Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        &--text7{
+            @extend .home__container--text1;
+            @include textoHome(texto7);
+            font-family:"Architects Daughter";
+        }
+    }
+}
+
+/* Boton para redirigir a portfolio en mobile */
+.btn__portfolio{
+    margin-top: 10%;
+    font-family: 'Raleway';
+}
+
+/* Media de home para mobile */
+@media screen and (max-width: 600px){
+    .home{
+        margin-top: 30%;
+        height: 400px;
+        position: relative;
+    }
+    .navbar{
+        display: none;
+    }
+}
+
+/* Media de home para desktop */
+@media screen and (min-width: 600px){
+    .btn__portfolio{
+        display: none;
+    }
+}

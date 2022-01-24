@@ -1,0 +1,45 @@
+/* Variables */
+$color__background: transparent;
+$color__texto--navbar : white;
+$color__texto--navbar-hover : #ffb703;
+$color__texto--navbar-hoverText : black ;
+
+
+nav {
+    font-size: 18px;
+    background-color: $color__background;
+}
+
+/* Navbar */
+.navbar{
+    &__botones{
+    width: 50%;
+    justify-content:end;
+    
+    &--all{
+        justify-content:space-between;
+        width: 600px;
+    }
+    &--desplegable{
+        background-color: $color__background;
+        border: none;
+        color: white;
+    }
+    &--a {
+        color: $color__texto--navbar !important;
+        font-family: 'Times New Roman', Times, serif !important;
+        font-size: 100% !important;
+        &:hover{
+            color: $color__texto--navbar-hoverText !important;
+            background-color:$color__texto--navbar-hover ;
+            border-radius: 5px;
+        }
+    }
+    }
+}
+
+/* Imagen icono */
+.imagen-icono{
+    filter: saturate(60%);
+    margin-right: 10%;
+}

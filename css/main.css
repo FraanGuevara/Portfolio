@@ -1,0 +1,303 @@
+/* Variables */
+nav {
+  font-size: 18px;
+  background-color: transparent;
+}
+
+/* Navbar */
+.navbar__botones {
+  width: 50%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.navbar__botones--all {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 600px;
+}
+
+.navbar__botones--desplegable {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.navbar__botones--a {
+  color: white !important;
+  font-family: 'Times New Roman', Times, serif !important;
+  font-size: 100% !important;
+}
+
+.navbar__botones--a:hover {
+  color: black !important;
+  background-color: #ffb703;
+  border-radius: 5px;
+}
+
+/* Imagen icono */
+.imagen-icono {
+  -webkit-filter: saturate(60%);
+          filter: saturate(60%);
+  margin-right: 10%;
+}
+
+/* Variables */
+/* Mixin para textos */
+.home {
+  color: white;
+  margin-top: 10%;
+  /* Grid para textos */
+}
+
+.home__container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "texto1 texto1 texto1 texto1 texto5 texto5 texto7 texto7" "texto2 texto2 texto2 texto2 texto5 texto5 texto6 texto6" "texto3 texto3 texto4 texto4 texto4 texto4 texto6 texto6";
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  /* textos */
+}
+
+.home__container--text1, .home__container--text2, .home__container--text3, .home__container--text4, .home__container--text5, .home__container--text6, .home__container--text7 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: texto1;
+  margin: 2px;
+  overflow: hidden;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+  /* Animacion */
+  font-size: 5vw;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.home__container--text1:hover, .home__container--text2:hover, .home__container--text3:hover, .home__container--text4:hover, .home__container--text5:hover, .home__container--text6:hover, .home__container--text7:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  z-index: 300;
+}
+
+.home__container--text2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: texto2;
+  margin: 2px;
+  overflow: hidden;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+  /* Animacion */
+  font-family: "Sedgwick Ave";
+}
+
+.home__container--text2:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  z-index: 300;
+}
+
+.home__container--text3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: texto3;
+  margin: 2px;
+  overflow: hidden;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+  /* Animacion */
+  font-family: "fantasy";
+}
+
+.home__container--text3:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  z-index: 300;
+}
+
+.home__container--text4 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 4;
+  grid-area: texto4;
+  margin: 2px;
+  overflow: hidden;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+  /* Animacion */
+  font-family: "Cedarville Cursive";
+}
+
+.home__container--text4:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  z-index: 300;
+}
+
+.home__container--text5 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 2;
+  grid-area: texto5;
+  margin: 2px;
+  overflow: hidden;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+  /* Animacion */
+  font-family: "Anton";
+}
+
+.home__container--text5:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  z-index: 300;
+}
+
+.home__container--text6 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 2;
+  grid-area: texto6;
+  margin: 2px;
+  overflow: hidden;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+  /* Animacion */
+  font-family: 'Raleway', 'Lucida Sans Unicode', 'Lucida   Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.home__container--text6:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  z-index: 300;
+}
+
+.home__container--text7 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 2;
+  grid-area: texto7;
+  margin: 2px;
+  overflow: hidden;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+  /* Animacion */
+  font-family: "Architects Daughter";
+}
+
+.home__container--text7:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  z-index: 300;
+}
+
+/* Boton para redirigir a portfolio en mobile */
+.btn__portfolio {
+  margin-top: 10%;
+  font-family: 'Raleway';
+}
+
+/* Media de home para mobile */
+@media screen and (max-width: 600px) {
+  .home {
+    margin-top: 30%;
+    height: 400px;
+    position: relative;
+  }
+  .navbar {
+    display: none;
+  }
+}
+
+/* Media de home para desktop */
+@media screen and (min-width: 600px) {
+  .btn__portfolio {
+    display: none;
+  }
+}
+
+/* Codigo para animacion logo */
+.logo__agrandar {
+  -webkit-animation-name: agrandar;
+          animation-name: agrandar;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  position: fixed;
+}
+
+.logo__agrandar--text {
+  font-size: 25px;
+  color: black;
+  background-color: greenyellow;
+  border-radius: 5px;
+}
+
+@-webkit-keyframes agrandar {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@keyframes agrandar {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+li, a {
+  list-style: none;
+  text-decoration: none;
+}
+
+video {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+
+.capa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+  z-index: -1;
+}
+/*# sourceMappingURL=main.css.map */
