@@ -16,7 +16,7 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 600px;
+  width: auto;
 }
 
 .navbar__botones--desplegable {
@@ -29,19 +29,22 @@ nav {
   color: white !important;
   font-family: 'Times New Roman', Times, serif !important;
   font-size: 100% !important;
+  margin-right: 30px;
 }
 
 .navbar__botones--a:hover {
   color: black !important;
   background-color: #ffb703;
   border-radius: 5px;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
 }
 
 /* Imagen icono */
 .imagen-icono {
   -webkit-filter: saturate(60%);
           filter: saturate(60%);
-  margin-right: 10%;
+  margin-right: 15%;
 }
 
 /* Variables */
@@ -85,6 +88,7 @@ nav {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   z-index: 300;
+  color: #ffb703;
 }
 
 .home__container--text2 {
@@ -104,6 +108,7 @@ nav {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   z-index: 300;
+  color: #ffb703;
 }
 
 .home__container--text3 {
@@ -123,6 +128,7 @@ nav {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   z-index: 300;
+  color: #ffb703;
 }
 
 .home__container--text4 {
@@ -142,6 +148,7 @@ nav {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   z-index: 300;
+  color: #ffb703;
 }
 
 .home__container--text5 {
@@ -162,6 +169,7 @@ nav {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   z-index: 300;
+  color: #ffb703;
 }
 
 .home__container--text6 {
@@ -182,6 +190,7 @@ nav {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   z-index: 300;
+  color: #ffb703;
 }
 
 .home__container--text7 {
@@ -201,18 +210,20 @@ nav {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   z-index: 300;
+  color: #ffb703;
 }
 
 /* Boton para redirigir a portfolio en mobile */
 .btn__portfolio {
-  margin-top: 10%;
+  margin-top: 15%;
   font-family: 'Raleway';
 }
 
 /* Media de home para mobile */
 @media screen and (max-width: 600px) {
   .home {
-    margin-top: 30%;
+    margin-top: 20%;
+    margin-right: 5%;
     height: 400px;
     position: relative;
   }
@@ -226,6 +237,23 @@ nav {
   .btn__portfolio {
     display: none;
   }
+}
+
+/* Copyright */
+.copyright__fraan {
+  font-size: 11px;
+  margin-top: 15%;
+  margin-bottom: 0;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 /* Codigo para animacion logo */
@@ -278,7 +306,6 @@ li, a {
 }
 
 video {
-  width: 100%;
   position: fixed;
   top: 0;
   left: 0;

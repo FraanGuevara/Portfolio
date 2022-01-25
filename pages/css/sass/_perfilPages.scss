@@ -1,0 +1,41 @@
+$color__fondoPerfil: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
+
+.contenedor{
+    margin: 0;
+    padding: 0;
+}
+
+.fondo{
+    width: auto;
+    height: auto;
+    background: $color__fondoPerfil;
+}
+
+.perfil{
+    padding: 0;
+    height: auto;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 0;
+    border-radius: 15px;
+    background-color: white;
+    &__image{
+        padding: 0;
+        width: auto;
+        &--img{
+            border-radius: 10px;
+            height: auto;
+            max-width: 400px;
+        }
+    }
+    &__texto{
+        padding: 7%;
+        margin: 0%;
+        &--txt{
+            height: 100%;
+            padding: 10%;
+            border-radius: 10px;
+            
+        }
+    }
+}

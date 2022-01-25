@@ -1,0 +1,122 @@
+/* Variables */
+nav {
+  font-size: 18px;
+  background-color: transparent;
+}
+
+/* Navbar */
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.navbar__botones {
+  width: 50%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.navbar__botones--all {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: auto;
+}
+
+.navbar__botones--desplegable {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.navbar__botones--a {
+  color: white !important;
+  font-family: 'Times New Roman', Times, serif !important;
+  font-size: 100% !important;
+  margin-right: 30px;
+}
+
+.navbar__botones--a:hover {
+  color: black !important;
+  background-color: #ffb703;
+  border-radius: 5px;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+/* Imagen icono */
+.imagen-icono {
+  -webkit-filter: saturate(60%);
+          filter: saturate(60%);
+  margin-right: 10%;
+}
+
+.imagen__flecha {
+  background-color: white;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
+  width: auto;
+  padding: 0.25%;
+  margin-bottom: 5%;
+}
+
+.imagen__flecha--icono {
+  width: auto;
+  height: auto;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.contenedor {
+  margin: 0;
+  padding: 0;
+}
+
+.fondo {
+  width: auto;
+  height: auto;
+  background: -webkit-gradient(linear, left top, right top, from(#1a2a6c), color-stop(#b21f1f), to(#fdbb2d));
+  background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
+}
+
+.perfil {
+  padding: 0;
+  height: auto;
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 0;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.perfil__image {
+  padding: 0;
+  width: auto;
+}
+
+.perfil__image--img {
+  border-radius: 10px;
+  height: auto;
+  max-width: 400px;
+}
+
+.perfil__texto {
+  padding: 7%;
+  margin: 0%;
+}
+
+.perfil__texto--txt {
+  height: 100%;
+  padding: 10%;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=mainPages.css.map */

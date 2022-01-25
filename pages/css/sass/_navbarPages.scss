@@ -12,10 +12,11 @@ nav {
 
 /* Navbar */
 .navbar{
+    display: flex;
+    width: 100%;
     &__botones{
-    width: 50%;
+    width: 50% ;
     justify-content:end;
-    
     &--all{
         justify-content:space-between;
         width: auto;
@@ -32,7 +33,7 @@ nav {
         margin-right: 30px;
         &:hover{
             color: $color__texto--navbar-hoverText !important;
-            background-color:$color__texto--navbar-hover ;
+            background-color:$color__texto--navbar-hover;
             border-radius: 5px;
             transition: all .4s ease
         }
@@ -43,6 +44,23 @@ nav {
 /* Imagen icono */
 .imagen-icono{
     filter: saturate(60%);
-    margin-right: 15%;
+    margin-right: 10%;
 }
 
+.imagen__flecha{
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: auto;
+    padding: 0.25%;
+    margin-bottom:5%;
+}
+.imagen__flecha--icono{
+    
+    width: auto;
+    height: auto;
+    background-color: white;
+    border-radius: 5px
+}

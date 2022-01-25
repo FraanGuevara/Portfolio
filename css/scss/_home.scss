@@ -12,6 +12,7 @@ $color__texto--grid : white;
         &:hover{
             transform: scale(1.20);
             z-index: 300;
+            color: #ffb703;
         }
 }
 
@@ -72,14 +73,15 @@ $color__texto--grid : white;
 
 /* Boton para redirigir a portfolio en mobile */
 .btn__portfolio{
-    margin-top: 10%;
+    margin-top: 15%;
     font-family: 'Raleway';
 }
 
 /* Media de home para mobile */
 @media screen and (max-width: 600px){
     .home{
-        margin-top: 30%;
+        margin-top: 20%;
+        margin-right: 5%;
         height: 400px;
         position: relative;
     }
@@ -93,4 +95,16 @@ $color__texto--grid : white;
     .btn__portfolio{
         display: none;
     }
+}
+
+/* Copyright */
+.copyright__fraan{
+    font-size: 11px;
+    margin-top: 15%;
+    margin-bottom:  0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
 }

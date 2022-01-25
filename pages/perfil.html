@@ -8,55 +8,89 @@
     <!-- CSS Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- CSS propio -->
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="./css/mainPages.css">
 </head>
 <body>
+    <!-- Fondo perfil -->
+    <div class="fondo">
 
     <!-- Navbar -->
     <header>
         <nav>
             <nav class="navbar navbar-expand-lg navbar-dark">
-                <!-- Logo -->
-                <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- Navbar botones -->
-                <div class="collapse navbar-collapse navbar__botones" id="navbarNavDropdown">
-                    <!-- Botones all-->
-                    <ul class="navbar-nav navbar__botones--all">
-                        <!-- Boton Perfil -->
-                        <li class="nav-item active ">
-                            <a class="nav-link navbar__botones--a" href="#">Perfil</a>
-                        </li>
-                    <!-- Boton Un poco de mi -->
-                        <li class="nav-item active ">
-                            <a class="nav-link navbar__botones--a" href="#">Un poco de mi</a>
-                        </li>
-                    <!-- Boton Trabajos -->
-                        <li class="nav-item active ">
-                            <a class="nav-link navbar__botones--a" href="#">Trabajos</a>
-                        </li>
-                    <!-- Boton Redes -->
-                        <li class="nav-item dropdown active ">
-                            <a class="nav-link dropdown-toggle navbar__botones--a" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Podes encontrarme en
-                            </a>
-                            <div class="dropdown-menu navbar__botones--desplegable" aria-labelledby="navbarDropdownMenuLink">
-                                <div class="">
-                                    <a class="dropdown-item  navbar__botones--a" href="#"><img class="imagen-icono" src="./images/Iconos/logo-de-facebook.png" alt=""> Facebook</a>
+                <div class="container-fluid">
+                    <a class="navbar-brand imagen__flecha" href="../index.html">
+                        <img class="imagen__flecha--icono" src="../images/Iconos/flecha-hacia-atras.png" alt="">
+                    </a>
+                    <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Navbar botones -->
+                    <div class="collapse navbar-collapse navbar__botones" id="navbarNavDropdown">
+                        <!-- Botones all-->
+                        <ul class="navbar-nav navbar__botones--all">
+                            <!-- Boton Perfil -->
+                            <li class="nav-item active ">
+                                <a class="nav-link navbar__botones--a" href="./pages/perfil.html">Perfil</a>
+                            </li>
+                        <!-- Boton Un poco de mi -->
+                            <li class="nav-item active ">
+                                <a class="nav-link navbar__botones--a" href="#">Un poco de mi</a>
+                            </li>
+                        <!-- Boton Trabajos -->
+                            <li class="nav-item active ">
+                                <a class="nav-link navbar__botones--a" href="#">Trabajos</a>
+                            </li>
+                        <!-- Boton Redes -->
+                            <li class="nav-item dropdown active ">
+                                <a class="nav-link dropdown-toggle navbar__botones--a" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Podes encontrarme en
+                                </a>
+                                <div class="dropdown-menu navbar__botones--desplegable" aria-labelledby="navbarDropdownMenuLink">
+                                    <div class="">
+                                        <a class="dropdown-item  navbar__botones--a" href="#"><img class="imagen-icono" src="../images/Iconos/logo-de-facebook.png" alt=""> Facebook</a>
+                                    </div>
+                                    <div class="">
+                                        <a class="dropdown-item navbar__botones--a" href="#"> <img class="imagen-icono" src="../images/Iconos/logo-de-instagram.png" alt=""> Instagram</a>
+                                    </div>
+                                    <div class="">
+                                        <a class="dropdown-item navbar__botones--a" href="#"> <img class="imagen-icono" src="../images/Iconos/logo-de-linkedin.png" alt=""> LinkedIn</a>
+                                    </div>
                                 </div>
-                                <div class="">
-                                    <a class="dropdown-item navbar__botones--a" href="#"> <img class="imagen-icono" src="./images/Iconos/logo-de-instagram.png" alt=""> Instagram</a>
-                                </div>
-                                <div class="">
-                                    <a class="dropdown-item navbar__botones--a" href="#"> <img class="imagen-icono" src="./images/Iconos/logo-de-linkedin.png" alt=""> LinkedIn</a>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+                
             </nav>
         </nav>
     </header>
+
+    <!-- Perfil -->
+    <section>
+        <div class="contenedor">
+            <div class="perfil row">
+                <div class="perfil__image col-sm-6 col-lg-6 ">
+                    <img class="w-100 perfil__image--img " src="../images/Foto/Yo.jpeg" alt="">
+                </div>
+                <div class="perfil__texto col-sm-6 col-lg-6 ">
+                    <div class="perfil__texto--txt shadow-lg">
+                        <h2>
+                            Hola bienvenidos, soy Franco y estoy proximo a convertirme en fullstack dev
+                        </h2>
+                        <br>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nobis pariatur animi quaerat corporis? Deleniti debitis placeat ipsam fugit quam, recusandae quidem? Corrupti officia officiis nam cum molestias dolores architecto.
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    
+
 
     <!-- Links JS script Bootstrap -->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
