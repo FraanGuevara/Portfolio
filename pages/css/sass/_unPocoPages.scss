@@ -1,0 +1,78 @@
+.contenedor{
+    margin: 0;
+    padding: 0;
+    &__separador{
+        width: auto;
+        height: 250px;
+    }
+}
+
+.unPocoDeMi{
+    padding: 0;
+    height: auto;
+    margin-top: 10%;
+    margin-right: 15%;
+    margin-left: 0;
+    border-radius: 15px;
+    background-color: white;
+    &__image{
+        padding: 0;
+        width: auto;
+        overflow: hidden;
+        &--img{
+            border-radius: 10px;
+            height: auto;
+            max-width: 400px;
+            margin-left: 30%;
+        }
+    }
+    &__texto{
+        padding: 7%;
+        margin: 0%;
+        margin-bottom: 10%;
+        &--txt{
+            height: 100%;
+            padding: 10%;
+            border-radius: 10px;
+            font-weight:600;
+        }
+    }
+}
+
+/* Media para Un poco de mi */
+@media screen and (max-width: 600px){
+    .contenedor{
+        margin: 0;
+        padding: 0;
+        &__separador{
+            width: auto;
+            height: 150px;
+        }
+    }
+    .unPocoDeMi{
+        border-radius: 0;
+        height: auto;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr ;
+        background-image: url(../../../images/Fondos/codigoUnpocodemi.jpeg);
+        overflow:hidden;
+        background-size: 700px;
+        background-repeat: none;
+        
+        &__texto{
+            margin-top: 10%;
+            height: 300px;
+            font-size: 13px;
+            font-weight:600;
+            &--txt{
+                font-weight: bold;
+                background-color: white;
+                filter: opacity(0.80);
+            }
+        }
+        &__image{
+            display: none;
+        }
+    }
+}

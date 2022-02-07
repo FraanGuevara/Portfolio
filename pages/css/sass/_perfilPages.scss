@@ -1,8 +1,13 @@
-$color__fondoPerfil: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
+$color__fondoPerfil: linear-gradient(to right, #ba8b02, #181818);
+
 
 .contenedor{
     margin: 0;
     padding: 0;
+    &__separador{
+        width: auto;
+        height: 250px;
+    }
 }
 
 .fondo{
@@ -14,7 +19,7 @@ $color__fondoPerfil: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
 .perfil{
     padding: 0;
     height: auto;
-    margin-top: 5%;
+    margin-top: 10%;
     margin-left: 15%;
     margin-right: 0;
     border-radius: 15px;
@@ -22,20 +27,76 @@ $color__fondoPerfil: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
     &__image{
         padding: 0;
         width: auto;
+        overflow: hidden;
         &--img{
             border-radius: 10px;
             height: auto;
             max-width: 400px;
+            margin-left: 10%;
+            
         }
     }
     &__texto{
         padding: 7%;
         margin: 0%;
+        margin-bottom: 10%;
         &--txt{
             height: 100%;
             padding: 10%;
             border-radius: 10px;
-            
         }
     }
+}
+
+.nombreJs__start{
+    font-size: 20px;
+    font-weight:600;
+}
+
+.nombreJs__name{
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.nombreJs__mod{
+    font-size: 35px;
+    font-style: normal;
+    font-weight:600;
+    &--skill{
+        color: #ba8b02 ;
+        font-weight: bolder;
+    }
+}
+
+/* Media para Perfil */
+@media screen and (max-width: 600px){
+    .perfil{
+        height: auto;
+        margin: 20% auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        &__texto{
+            height: auto;
+        }
+    }
+    .nombreJs__start{
+        font-size: 13px;
+        font-weight:600;
+    }
+    
+    .nombreJs__name{
+        font-size: 25px;
+        font-weight: bolder;
+    }
+    .nombreJs__mod{
+        font-size: 13px;
+        font-style: normal;
+        font-weight:600;
+        height: auto;
+        &--skill{
+            color: #ba8b02 ;
+            font-weight: bolder;
+        }
+    }
+
 }

@@ -7,12 +7,14 @@
     <title>Document</title>
     <!-- CSS Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Link CSS AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS propio -->
     <link rel="stylesheet" href="./css/mainPages.css">
 </head>
 <body>
-    <!-- Fondo perfil -->
-    <div class="fondo">
+<!-- Fondo perfil -->
+<div class="fondo">
 
     <!-- Navbar -->
     <header>
@@ -31,11 +33,11 @@
                         <ul class="navbar-nav navbar__botones--all">
                             <!-- Boton Perfil -->
                             <li class="nav-item active ">
-                                <a class="nav-link navbar__botones--a" href="./pages/perfil.html">Perfil</a>
+                                <a class="nav-link navbar__botones--a" href="../pages/perfil.html">Perfil</a>
                             </li>
                         <!-- Boton Un poco de mi -->
                             <li class="nav-item active ">
-                                <a class="nav-link navbar__botones--a" href="#">Un poco de mi</a>
+                                <a class="nav-link navbar__botones--a" href="#unPocoDeMi">Un poco de mi</a>
                             </li>
                         <!-- Boton Trabajos -->
                             <li class="nav-item active ">
@@ -60,7 +62,6 @@
                         </ul>
                     </div>
                 </div>
-                
             </nav>
         </nav>
     </header>
@@ -70,31 +71,74 @@
         <div class="contenedor">
             <div class="perfil row">
                 <div class="perfil__image col-sm-6 col-lg-6 ">
-                    <img class="w-100 perfil__image--img " src="../images/Foto/Yo.jpeg" alt="">
+                    <img class="w-100 perfil__image--img " src="../images/Foto/Yo.jpeg" data-aos="zoom-in" data-aos-duration="2000" alt="">
                 </div>
                 <div class="perfil__texto col-sm-6 col-lg-6 ">
-                    <div class="perfil__texto--txt shadow-lg">
-                        <h2>
-                            Hola bienvenidos, soy Franco y estoy proximo a convertirme en fullstack dev
-                        </h2>
+                    <div class="perfil__texto--txt " data-aos="fade-left"
+                    data-aos-offset="300"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-sine" >
+                        <div class="nombreJs__start">
+                            Hola bienvenidos, mi nombre es
+                        </div>
                         <br>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nobis pariatur animi quaerat corporis? Deleniti debitis placeat ipsam fugit quam, recusandae quidem? Corrupti officia officiis nam cum molestias dolores architecto.
+                        <div class="nombreJs__name">
+                            Franco Guevara
+                        </div>
+                        <div class="nombreJs__mod">
+                            Y soy <span class="typed"></span>
+                        </div>
+                        <br><br>
+                        <p class="nombreJs__start">
+                            Descubri lo que realmente me gusta, que es programar y actualmente estoy desarrollando mis skills !
                         </p>
                     </div>
                     
                 </div>
             </div>
+            <div class="contenedor__separador">
+            </div>
         </div>
     </section>
-    </div>
-
     
+
+    <!-- Un poco de mi  -->
+    <section>
+        <div class="contenedor">
+                <div class="unPocoDeMi row" id="unPocoDeMi">
+                    <div class="unPocoDeMi__texto col-sm-6 col-lg-6 ">
+                        <div class="unPocoDeMi__texto--txt shadow-lg" data-aos="fade-left"
+                        data-aos-offset="300"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-sine" >
+                            <br>
+                            <p>
+                                Me considero una persona responsable, tengo aptitudes para resolver los problemas laborales eficientemente Me adapto con facilidad a los diferentes grupos de trabajo.
+                                Me gusta aprender y desarrollar mis habilidades.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="unPocoDeMi__image col-sm-6 col-lg-6 ">
+                        <img class="w-100 unPocoDeMi__image--img " src="../images/Fondos/codigoUnpocodemi.jpeg" data-aos="zoom-in" data-aos-duration="2000" alt="">
+                    </div>
+                </div>
+        </div>
+    </section>
+</div> <!-- El  color de fondo estatico llega hasta aca -->
 
 
     <!-- Links JS script Bootstrap -->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<!-- Links JS AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="../Js/script.js"></script>
+
 </body>
 </html>

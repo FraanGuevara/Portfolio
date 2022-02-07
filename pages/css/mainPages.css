@@ -56,7 +56,7 @@ nav {
 
 .imagen__flecha {
   background-color: white;
-  border-radius: 5px;
+  border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,14 +66,13 @@ nav {
   height: 50px;
   width: auto;
   padding: 0.25%;
-  margin-bottom: 5%;
 }
 
 .imagen__flecha--icono {
   width: auto;
   height: auto;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 50%;
 }
 
 .contenedor {
@@ -81,17 +80,22 @@ nav {
   padding: 0;
 }
 
+.contenedor__separador {
+  width: auto;
+  height: 250px;
+}
+
 .fondo {
   width: auto;
   height: auto;
-  background: -webkit-gradient(linear, left top, right top, from(#1a2a6c), color-stop(#b21f1f), to(#fdbb2d));
-  background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
+  background: -webkit-gradient(linear, left top, right top, from(#ba8b02), to(#181818));
+  background: linear-gradient(to right, #ba8b02, #181818);
 }
 
 .perfil {
   padding: 0;
   height: auto;
-  margin-top: 5%;
+  margin-top: 10%;
   margin-left: 15%;
   margin-right: 0;
   border-radius: 15px;
@@ -101,22 +105,165 @@ nav {
 .perfil__image {
   padding: 0;
   width: auto;
+  overflow: hidden;
 }
 
 .perfil__image--img {
   border-radius: 10px;
   height: auto;
   max-width: 400px;
+  margin-left: 10%;
 }
 
 .perfil__texto {
   padding: 7%;
   margin: 0%;
+  margin-bottom: 10%;
 }
 
 .perfil__texto--txt {
   height: 100%;
   padding: 10%;
   border-radius: 10px;
+}
+
+.nombreJs__start {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.nombreJs__name {
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.nombreJs__mod {
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.nombreJs__mod--skill {
+  color: #ba8b02;
+  font-weight: bolder;
+}
+
+/* Media para Perfil */
+@media screen and (max-width: 600px) {
+  .perfil {
+    height: auto;
+    margin: 20% auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .perfil__texto {
+    height: auto;
+  }
+  .nombreJs__start {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .nombreJs__name {
+    font-size: 25px;
+    font-weight: bolder;
+  }
+  .nombreJs__mod {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    height: auto;
+  }
+  .nombreJs__mod--skill {
+    color: #ba8b02;
+    font-weight: bolder;
+  }
+}
+
+.contenedor {
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor__separador {
+  width: auto;
+  height: 250px;
+}
+
+.unPocoDeMi {
+  padding: 0;
+  height: auto;
+  margin-top: 10%;
+  margin-right: 15%;
+  margin-left: 0;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.unPocoDeMi__image {
+  padding: 0;
+  width: auto;
+  overflow: hidden;
+}
+
+.unPocoDeMi__image--img {
+  border-radius: 10px;
+  height: auto;
+  max-width: 400px;
+  margin-left: 30%;
+}
+
+.unPocoDeMi__texto {
+  padding: 7%;
+  margin: 0%;
+  margin-bottom: 10%;
+}
+
+.unPocoDeMi__texto--txt {
+  height: 100%;
+  padding: 10%;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+/* Media para Un poco de mi */
+@media screen and (max-width: 600px) {
+  .contenedor {
+    margin: 0;
+    padding: 0;
+  }
+  .contenedor__separador {
+    width: auto;
+    height: 150px;
+  }
+  .unPocoDeMi {
+    border-radius: 0;
+    height: auto;
+    margin: auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    background-image: url(../../../images/Fondos/codigoUnpocodemi.jpeg);
+    overflow: hidden;
+    background-size: 700px;
+    background-repeat: none;
+  }
+  .unPocoDeMi__texto {
+    margin-top: 10%;
+    height: 300px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .unPocoDeMi__texto--txt {
+    font-weight: bold;
+    background-color: white;
+    -webkit-filter: opacity(0.8);
+            filter: opacity(0.8);
+  }
+  .unPocoDeMi__image {
+    display: none;
+  }
 }
 /*# sourceMappingURL=mainPages.css.map */
