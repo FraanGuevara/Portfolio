@@ -1,5 +1,9 @@
 $color__fondoPerfil: linear-gradient(to right, #ba8b02, #181818);
+$font: 'Ubuntu', sans-serif;
 
+// body{
+//     font-family: $font;
+// }
 
 .contenedor{
     margin: 0;
@@ -33,7 +37,6 @@ $color__fondoPerfil: linear-gradient(to right, #ba8b02, #181818);
             height: auto;
             max-width: 400px;
             margin-left: 10%;
-            
         }
     }
     &__texto{
@@ -72,7 +75,8 @@ $color__fondoPerfil: linear-gradient(to right, #ba8b02, #181818);
 @media screen and (max-width: 600px){
     .perfil{
         height: auto;
-        margin: 20% auto;
+        margin-top: 20%;
+        margin-left: 0;
         display: grid;
         grid-template-columns: 1fr 1fr;
         &__texto{
