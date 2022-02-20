@@ -152,7 +152,7 @@ nav {
   font-weight: bolder;
   color: white;
   margin-bottom: 10%;
-  -webkit-text-stroke: 0.1px #ba8b02;
+  -webkit-text-stroke: 0.5px #ba8b02;
 }
 
 .nombreJs__mod {
