@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- Google Fonts -->
+    <!-- Link Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&family=Ubuntu:wght@500&display=swap" rel="stylesheet">    
     <!-- CSS Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Link CSS AOS -->
@@ -23,7 +23,7 @@
     <!-- Navbar -->
     <header>
         <nav>
-            <nav class="navbar navbar-expand-lg navbar-dark">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
                     <a class="navbar-brand imagen__flecha" href="../index.html">
                         <img class="imagen__flecha--icono" src="../images/Iconos/flecha-hacia-atras.png" alt="">
@@ -72,49 +72,52 @@
 
     <!-- Perfil -->
     <section>
-        <div class="contenedor">
-            <div class="perfil row">
-                <div class="perfil__image col-sm-6 col-lg-6 ">
-                    <img class="w-100 perfil__image--img " src="../images/Foto/Yo.jpeg" data-aos="zoom-in" data-aos-duration="2000" alt="">
-                </div>
-                <div class="perfil__texto col-sm-6 col-lg-6 ">
-                    <div class="perfil__texto--txt " data-aos="fade-left"
-                    data-aos-offset="300"
-                    data-aos-duration="1000"
-                    data-aos-easing="ease-in-sine" >
-                        <div class="nombreJs__start">
-                            Hola bienvenidos, mi nombre es
-                        </div>
-                        <br>
-                        <div class="nombreJs__name">
-                            Franco Guevara
-                        </div>
-                        <div class="nombreJs__mod">
-                            Y soy <span class="typed"></span>
-                        </div>
-                        <br><br>
-                        <p class="nombreJs__start">
-                            Descubri lo que realmente me gusta, que es programar y actualmente estoy desarrollando mis skills !
-                        </p>
+        <div class="container-fluid">
+                <div class="perfil row">
+                    <div class="perfil__image col-sm-6 col-lg-6 ">
+                        <img class="w-100 perfil__image--img " src="../images/Foto/Yo.jpeg" data-aos="zoom-in" data-aos-duration="2000" alt="">
                     </div>
-                    
+                    <div class="perfil__texto col-sm-6 col-lg-6 ">
+                        <div class="perfil__texto--txt shadow-lg" data-aos="fade-left"
+                        data-aos-offset="300"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-sine" >
+                            <div class="nombreJs__start">
+                                Hola bienvenidos, mi nombre es
+                            </div>
+                            <br>
+                            <div class="nombreJs__name">
+                                Franco Guevara
+                            </div>
+                            <div class="nombreJs__mod">
+                                Y soy <span class="typed"></span>
+                            </div>
+                            <br><br>
+                            <p class="nombreJs__start">
+                                Descubri lo que realmente me gusta, que es programar y actualmente estoy desarrollando mis skills !
+                            </p>
+                        </div>
+                        
+                    </div>
                 </div>
+                <div class="contenedor__separador">
             </div>
-            <div class="contenedor__separador">
-            </div>
+            
         </div>
     </section>
     
 
     <!-- Un poco de mi  -->
-    <section>
-        <div class="contenedor">
-                <div class="unPocoDeMi row" id="unPocoDeMi">
+    <section id="unPocoDeMi">
+        <div class="container-fluid contenedor">
+                <div class="unPocoDeMi row" >
                     <div class="unPocoDeMi__texto col-sm-6 col-lg-6 ">
                         <div class="unPocoDeMi__texto--txt shadow-lg" data-aos="fade-left"
                         data-aos-offset="300"
                         data-aos-duration="1000"
                         data-aos-easing="ease-in-sine" >
+                            <br>
+                            <h3>Un poco sobre mi...</h3>
                             <br>
                             <p>
                                 Me considero una persona responsable, tengo aptitudes para resolver los problemas laborales eficientemente Me adapto con facilidad a los diferentes grupos de trabajo.
@@ -133,53 +136,52 @@
     </section>
 </div> <!-- El  color de fondo estatico llega hasta aca -->
 
-    <!-- Habilidades  -->
-    <section >
-    <div class="">
 
-    </div>
-            <!-- Video de fondo -->
+    <!-- Habilidades -->
     <main>
+        <!-- Video de fondo -->
         <section>
             <video muted autoplay loop>
                 <source src="../video/video (1).mp4">
             </video>
             <div class="capa"></div>
         </section>
-    </main>
 
-    <!-- Habilidades -->
+        <!-- Iconos -->
         <div>
-            <h1 class="habilidades__text shadow-lg">Habilidades Tecnicas</h1>
-            <div class="container container__habilidades">
-                <div class="habilidades">
-                    <div class="habilidades__icono1">
-                        <img class="habilidadesIconos" src="../images/Iconos/html-5.png" alt="">
-                    </div>
-                    <div class="habilidades__icono2">
-                        <img class="habilidadesIconos" src="../images/Iconos/css-3.png" alt="">
-                    </div>
-                    <div class="habilidades__icono3">
-                        <img class="habilidadesIconos" src="../images/Iconos/js.png" alt="">
-                    </div>
-                    <div class="habilidades__icono4">
-                        <img class="habilidadesIconos" class="habilidades__icono--img" src="../images/Iconos/bootstrap.png" alt="">
-                    </div>
-                    <div class="habilidades__icono5">
-                        <img class="habilidadesIconos" src="../images/Iconos/sass.png" alt="">
-                    </div>
-                    <div class="habilidades__icono6">
-                        <img class="habilidadesIconos" src="../images/Iconos/git.png" alt="">
-                    </div>
-                    <div class="habilidades__icono7">
-                        <img class="habilidadesIconos" src="../images/Iconos/github.png" alt="">
-                    </div>
-                    <div class="habilidades__icono8">
-                        <img class="habilidadesIconos" src="../images/Iconos/figma.png" alt="">
+                <h1 class="habilidades__text shadow-lg">Habilidades Tecnicas</h1>
+                <div class="container container__habilidades">
+                    <div class="habilidades">
+                        <div class="habilidades__icono1">
+                            <img class="habilidadesIconos" src="../images/Iconos/html-5.png"  alt="">
+                        </div>
+                        <div class="habilidades__icono2">
+                            <img class="habilidadesIconos" src="../images/Iconos/css-3.png" alt="">
+                        </div>
+                        <div class="habilidades__icono3">
+                            <img class="habilidadesIconos" src="../images/Iconos/js.png" alt="">
+                        </div>
+                        <div class="habilidades__icono4">
+                            <img class="habilidadesIconos" class="habilidades__icono--img" src="../images/Iconos/bootstrap.png" alt="">
+                        </div>
+                        <div class="habilidades__icono5">
+                            <img class="habilidadesIconos" src="../images/Iconos/sass.png" alt="">
+                        </div>
+                        <div class="habilidades__icono6">
+                            <img class="habilidadesIconos" src="../images/Iconos/git.png" alt="">
+                        </div>
+                        <div class="habilidades__icono7">
+                            <img class="habilidadesIconos" src="../images/Iconos/github.png" alt="">
+                        </div>
+                        <div class="habilidades__icono8">
+                            <img class="habilidadesIconos" src="../images/Iconos/figma.png" alt="">
+                        </div>
                     </div>
                 </div>
-            </div>
         </div>
+    </main>
+
+
         
         
     </section>

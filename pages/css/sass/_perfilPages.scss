@@ -1,17 +1,13 @@
-$color__fondoPerfil: linear-gradient(to right, #ba8b02, #181818);
-$font: 'Ubuntu', sans-serif;
+$color__fondoPerfil: white;
+$font__detalle: 'Ubuntu', sans-serif;
+$font: 'Raleway', sans-serif;
+$color_font--detalle: #ba8b02;
+$color_borde:#ffb703;
 
-// body{
-//     font-family: $font;
-// }
 
-.contenedor{
-    margin: 0;
-    padding: 0;
-    &__separador{
+.contenedor__separador{
         width: auto;
-        height: 250px;
-    }
+        height: 100px;
 }
 
 .fondo{
@@ -25,8 +21,9 @@ $font: 'Ubuntu', sans-serif;
     height: auto;
     margin-top: 10%;
     margin-left: 15%;
-    margin-right: 0;
-    border-radius: 15px;
+    border-radius: 15px 0px 0px 15px;
+    border: solid 0.5px $color_borde;
+    border-right: none;
     background-color: white;
     &__image{
         padding: 0;
@@ -37,11 +34,12 @@ $font: 'Ubuntu', sans-serif;
             height: auto;
             max-width: 400px;
             margin-left: 10%;
+            
         }
     }
     &__texto{
         padding: 7%;
-        margin: 0%;
+        margin: 0;
         margin-bottom: 10%;
         &--txt{
             height: 100%;
@@ -52,21 +50,26 @@ $font: 'Ubuntu', sans-serif;
 }
 
 .nombreJs__start{
-    font-size: 20px;
-    font-weight:600;
-}
-
-.nombreJs__name{
-    font-size: 50px;
+    font-family: $font;
     font-weight: bolder;
 }
 
+.nombreJs__name{
+    font-family: $font__detalle;
+    font-size: 50px;
+    font-weight: bolder;
+    color:white;
+    margin-bottom: 10%;
+    -webkit-text-stroke: 0.1px $color_font--detalle;
+}
+
 .nombreJs__mod{
+    font-family: $font__detalle;
     font-size: 35px;
     font-style: normal;
     font-weight:600;
     &--skill{
-        color: #ba8b02 ;
+        color: $color_font--detalle ;
         font-weight: bolder;
     }
 }
@@ -81,6 +84,9 @@ $font: 'Ubuntu', sans-serif;
         grid-template-columns: 1fr 1fr;
         &__texto{
             height: auto;
+        &--txt{
+            font-size: 10px;
+        }
         }
     }
     .nombreJs__start{
@@ -97,7 +103,7 @@ $font: 'Ubuntu', sans-serif;
         font-style: normal;
         height: auto;
         &--skill{
-            color: #ba8b02 ;
+            color: $color_font--detalle ;
             font-weight: bolder;
         }
     }

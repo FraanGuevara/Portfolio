@@ -3,6 +3,7 @@ $color__background: transparent;
 $color__texto--navbar : white;
 $color__texto--navbar-hover : #ffb703;
 $color__texto--navbar-hoverText : black ;
+$font: 'Ubuntu', sans-serif;
 
 
 nav {
@@ -27,8 +28,8 @@ nav {
     }
     &--a {
         color: $color__texto--navbar !important;
-        font-family: 'Times New Roman', Times, serif !important;
-        font-size: 100% !important;
+        font-family: $font !important;
+        font-size: 15px !important;
         margin-right: 30px;
         &:hover{
             color: $color__texto--navbar-hoverText !important;

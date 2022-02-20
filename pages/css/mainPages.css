@@ -10,6 +10,7 @@ nav {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  /* Imagen icono */
 }
 
 .navbar__botones {
@@ -33,28 +34,29 @@ nav {
 }
 
 .navbar__botones--a {
-  color: white !important;
-  font-family: 'Times New Roman', Times, serif !important;
-  font-size: 100% !important;
+  color: #888 !important;
+  font-family: "Ubuntu", sans-serif !important;
+  font-size: 15px !important;
   margin-right: 30px;
 }
 
 .navbar__botones--a:hover {
-  color: black !important;
-  background-color: #ffb703;
+  -webkit-box-shadow: inset -10.5em 0 0 0 #ffb703, inset 10.5em 0 0 0 #ffb703;
+          box-shadow: inset -10.5em 0 0 0 #ffb703, inset 10.5em 0 0 0 #ffb703;
+  -webkit-transition: .6s ease-in;
+  transition: .6s ease-in;
+  z-index: 1;
   border-radius: 5px;
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
+  color: white !important;
 }
 
-/* Imagen icono */
-.imagen-icono {
+.navbar .imagen-icono {
   -webkit-filter: saturate(60%);
           filter: saturate(60%);
   margin-right: 10%;
 }
 
-.imagen__flecha {
+.navbar .imagen__flecha {
   background-color: white;
   border-radius: 50%;
   display: -webkit-box;
@@ -68,7 +70,7 @@ nav {
   padding: 0.25%;
 }
 
-.imagen__flecha--icono {
+.navbar .imagen__flecha--icono {
   width: auto;
   height: auto;
   background-color: white;
@@ -77,26 +79,30 @@ nav {
 
 @media screen and (max-width: 600px) {
   nav {
-    font-size: 15px;
     background-color: transparent;
   }
-}
-
-.contenedor {
-  margin: 0;
-  padding: 0;
+  .navbar__botones--a {
+    font-size: 13px !important;
+    font-family: "Ubuntu", sans-serif !important;
+  }
+  .navbar__botones--a:hover {
+    background-color: #ffb703;
+    -webkit-transition: .6s ease-in;
+    transition: .6s ease-in;
+    border-radius: 5px;
+    color: white !important;
+  }
 }
 
 .contenedor__separador {
   width: auto;
-  height: 250px;
+  height: 100px;
 }
 
 .fondo {
   width: auto;
   height: auto;
-  background: -webkit-gradient(linear, left top, right top, from(#ba8b02), to(#181818));
-  background: linear-gradient(to right, #ba8b02, #181818);
+  background: white;
 }
 
 .perfil {
@@ -104,8 +110,9 @@ nav {
   height: auto;
   margin-top: 10%;
   margin-left: 15%;
-  margin-right: 0;
-  border-radius: 15px;
+  border-radius: 15px 0px 0px 15px;
+  border: solid 0.5px #ffb703;
+  border-right: none;
   background-color: white;
 }
 
@@ -124,7 +131,7 @@ nav {
 
 .perfil__texto {
   padding: 7%;
-  margin: 0%;
+  margin: 0;
   margin-bottom: 10%;
 }
 
@@ -135,16 +142,21 @@ nav {
 }
 
 .nombreJs__start {
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.nombreJs__name {
-  font-size: 50px;
+  font-family: "Raleway", sans-serif;
   font-weight: bolder;
 }
 
+.nombreJs__name {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 50px;
+  font-weight: bolder;
+  color: white;
+  margin-bottom: 10%;
+  -webkit-text-stroke: 0.1px #ba8b02;
+}
+
 .nombreJs__mod {
+  font-family: "Ubuntu", sans-serif;
   font-size: 35px;
   font-style: normal;
   font-weight: 600;
@@ -169,6 +181,9 @@ nav {
   .perfil__texto {
     height: auto;
   }
+  .perfil__texto--txt {
+    font-size: 10px;
+  }
   .nombreJs__start {
     font-size: 13px;
     font-weight: 600;
@@ -188,11 +203,6 @@ nav {
   }
 }
 
-.contenedor {
-  margin: 0;
-  padding: 0;
-}
-
 .contenedor__separador {
   width: auto;
   height: 250px;
@@ -204,8 +214,10 @@ nav {
   margin-top: 10%;
   margin-right: 15%;
   margin-left: 0;
-  border-radius: 15px;
   background-color: white;
+  border-radius: 0px 15px 15px 0px;
+  border: solid 0.5px #ba8b02;
+  border-left: none;
 }
 
 .unPocoDeMi__image {
@@ -231,7 +243,13 @@ nav {
   height: 100%;
   padding: 10%;
   border-radius: 10px;
-  font-weight: 600;
+  font-weight: bolder;
+  font-family: "Raleway", sans-serif;
+}
+
+.unPocoDeMi__texto--txt h3 {
+  font-family: "Ubuntu", sans-serif;
+  color: #ba8b02;
 }
 
 /* Media para Un poco de mi */
@@ -265,8 +283,8 @@ nav {
   .unPocoDeMi__texto--txt {
     font-weight: bold;
     background-color: white;
-    -webkit-filter: opacity(0.8);
-            filter: opacity(0.8);
+    -webkit-filter: opacity(0.85);
+            filter: opacity(0.85);
   }
   .unPocoDeMi__image {
     display: none;
@@ -287,7 +305,7 @@ video {
 }
 
 .capa {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -307,7 +325,7 @@ video {
   background-color: #888;
   color: white;
   text-align: center;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Raleway", sans-serif;
   margin-top: -2%;
 }
 
@@ -345,7 +363,8 @@ video {
           justify-content: center;
   height: 50%;
   width: 80%;
-  background-color: #888;
+  background-color: white;
+  opacity: 0.7;
   margin: 10%;
   padding: 15px;
   border-radius: 10px;
@@ -357,6 +376,7 @@ video {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   z-index: 300;
+  opacity: 1;
 }
 
 .habilidades__icono2 {
@@ -374,7 +394,8 @@ video {
           justify-content: center;
   height: 50%;
   width: 80%;
-  background-color: #888;
+  background-color: white;
+  opacity: 0.7;
   margin: 10%;
   padding: 15px;
   border-radius: 10px;
@@ -386,6 +407,7 @@ video {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   z-index: 300;
+  opacity: 1;
 }
 
 .habilidades__icono3 {
@@ -403,7 +425,8 @@ video {
           justify-content: center;
   height: 50%;
   width: 80%;
-  background-color: #888;
+  background-color: white;
+  opacity: 0.7;
   margin: 10%;
   padding: 15px;
   border-radius: 10px;
@@ -415,6 +438,7 @@ video {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   z-index: 300;
+  opacity: 1;
 }
 
 .habilidades__icono4 {
@@ -432,7 +456,8 @@ video {
           justify-content: center;
   height: 50%;
   width: 80%;
-  background-color: #888;
+  background-color: white;
+  opacity: 0.7;
   margin: 10%;
   padding: 15px;
   border-radius: 10px;
@@ -444,6 +469,7 @@ video {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   z-index: 300;
+  opacity: 1;
 }
 
 .habilidades__icono5 {
@@ -461,7 +487,8 @@ video {
           justify-content: center;
   height: 50%;
   width: 80%;
-  background-color: #888;
+  background-color: white;
+  opacity: 0.7;
   margin: 10%;
   padding: 15px;
   border-radius: 10px;
@@ -473,6 +500,7 @@ video {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   z-index: 300;
+  opacity: 1;
 }
 
 .habilidades__icono6 {
@@ -490,7 +518,8 @@ video {
           justify-content: center;
   height: 50%;
   width: 80%;
-  background-color: #888;
+  background-color: white;
+  opacity: 0.7;
   margin: 10%;
   padding: 15px;
   border-radius: 10px;
@@ -502,6 +531,7 @@ video {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   z-index: 300;
+  opacity: 1;
 }
 
 .habilidades__icono7 {
@@ -519,7 +549,8 @@ video {
           justify-content: center;
   height: 50%;
   width: 80%;
-  background-color: #888;
+  background-color: white;
+  opacity: 0.7;
   margin: 10%;
   padding: 15px;
   border-radius: 10px;
@@ -531,6 +562,7 @@ video {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   z-index: 300;
+  opacity: 1;
 }
 
 .habilidades__icono8 {
@@ -548,7 +580,8 @@ video {
           justify-content: center;
   height: 50%;
   width: 80%;
-  background-color: #888;
+  background-color: white;
+  opacity: 0.7;
   margin: 10%;
   padding: 15px;
   border-radius: 10px;
@@ -560,6 +593,7 @@ video {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   z-index: 300;
+  opacity: 1;
 }
 
 @media screen and (max-width: 600px) {
@@ -587,10 +621,11 @@ video {
     padding: 10px;
     width: 50%;
     border-radius: 5px;
-    background-color: white;
-    color: black;
+    background-color: #888;
+    color: white;
+    font-weight: 900;
     text-align: center;
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Raleway", sans-serif;
     margin-top: -5%;
     font-size: 20px;
   }
