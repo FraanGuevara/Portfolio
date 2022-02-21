@@ -2,10 +2,11 @@ $color__fondoPerfil: white;
 $font__detalle: 'Ubuntu', sans-serif;
 $font: 'Raleway', sans-serif;
 $color_font--detalle: #ba8b02;
+$color__background:rgb(151, 151, 151);
 
 
 /* Mixin para imagenes de habilidades */
-@mixin habilidadesIconos ($grid-area) {
+@mixin iconos ($grid-area) {
     grid-area: $grid-area;
     overflow: hidden;
     transition: all .6s ease;
@@ -13,8 +14,7 @@ $color_font--detalle: #ba8b02;
     justify-content:center;
     height: 50%;
     width: 80%;
-    background-color: white;
-    opacity: 0.7;
+    background-color: rgba(255, 255, 255, 0.5);
     margin: 10%;
     padding: 15px;
     border-radius: 10px ;
@@ -22,7 +22,6 @@ $color_font--detalle: #ba8b02;
         filter:grayscale(0);
             transform: scale(1.2);
             z-index: 300;
-            opacity: 1;
     }
 }
 
@@ -55,17 +54,18 @@ video{
     padding: 10px;
     width: 50%;
     border-radius: 5px;
-    background-color: #888;
+    background-color: $color__background;
     color: white;
     text-align: center;
     font-family: $font;
-    margin-top: -2%; ;
+    font-weight: 500;
+    margin-top: -2%;
 }
 
 
 .habilidades{
     margin-top: 15%;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
     background-color: transparent;
     border-radius: 15px;
     height: 700px;
@@ -79,37 +79,40 @@ video{
     align-items: center;
 
     &__icono1{
-        @include habilidadesIconos (lugar1);
+        @include iconos (lugar1);
+        
     }
 
     &__icono2{
-        @include habilidadesIconos (lugar2)
+        @include iconos  (lugar2);
     }
 
     &__icono3{
-        @include habilidadesIconos (lugar3)
+        @include iconos  (lugar3);
     }
 
     &__icono4{
-        @include habilidadesIconos (lugar4)
+        @include iconos  (lugar4);
     }
 
     &__icono5{
-        @include habilidadesIconos (lugar5)
+        @include iconos  (lugar5);
     }
 
     &__icono6{
-        @include habilidadesIconos (lugar6)
+        @include iconos  (lugar6);
     }
 
     &__icono7{
-        @include habilidadesIconos (lugar7)
+        @include iconos  (lugar7);
     }
 
     &__icono8{
-        @include habilidadesIconos (lugar8)
+        @include iconos  (lugar8);
     }
 }
+
+
 
 
 @media screen and (max-width: 600px){

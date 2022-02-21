@@ -34,7 +34,7 @@ nav {
 }
 
 .navbar__botones--a {
-  color: #888 !important;
+  color: #979797 !important;
   font-family: "Ubuntu", sans-serif !important;
   font-size: 15px !important;
   margin-right: 30px;
@@ -144,6 +144,7 @@ nav {
 .nombreJs__start {
   font-family: "Raleway", sans-serif;
   font-weight: bolder;
+  color: black;
 }
 
 .nombreJs__name {
@@ -160,6 +161,7 @@ nav {
   font-size: 35px;
   font-style: normal;
   font-weight: 600;
+  color: black;
 }
 
 .nombreJs__mod--skill {
@@ -230,7 +232,7 @@ nav {
   border-radius: 10px;
   height: auto;
   max-width: 400px;
-  margin-left: 30%;
+  margin: 10%;
 }
 
 .unPocoDeMi__texto {
@@ -283,8 +285,13 @@ nav {
   .unPocoDeMi__texto--txt {
     font-weight: bold;
     background-color: white;
-    -webkit-filter: opacity(0.85);
-            filter: opacity(0.85);
+    background-color: rgba(255, 255, 255, 0.801);
+  }
+  .unPocoDeMi__texto--txt h3 {
+    color: #ba8b02;
+  }
+  .unPocoDeMi__texto--txt p {
+    color: black;
   }
   .unPocoDeMi__image {
     display: none;
@@ -322,16 +329,17 @@ video {
   padding: 10px;
   width: 50%;
   border-radius: 5px;
-  background-color: #888;
+  background-color: #979797;
   color: white;
   text-align: center;
   font-family: "Raleway", sans-serif;
+  font-weight: 500;
   margin-top: -2%;
 }
 
 .habilidades {
   margin-top: 15%;
-  margin-bottom: 20%;
+  margin-bottom: 10%;
   background-color: transparent;
   border-radius: 15px;
   height: 700px;
@@ -363,8 +371,7 @@ video {
           justify-content: center;
   height: 50%;
   width: 80%;
-  background-color: white;
-  opacity: 0.7;
+  background-color: rgba(255, 255, 255, 0.5);
   margin: 10%;
   padding: 15px;
   border-radius: 10px;
@@ -376,7 +383,6 @@ video {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   z-index: 300;
-  opacity: 1;
 }
 
 .habilidades__icono2 {
@@ -394,8 +400,7 @@ video {
           justify-content: center;
   height: 50%;
   width: 80%;
-  background-color: white;
-  opacity: 0.7;
+  background-color: rgba(255, 255, 255, 0.5);
   margin: 10%;
   padding: 15px;
   border-radius: 10px;
@@ -407,7 +412,6 @@ video {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   z-index: 300;
-  opacity: 1;
 }
 
 .habilidades__icono3 {
@@ -425,8 +429,7 @@ video {
           justify-content: center;
   height: 50%;
   width: 80%;
-  background-color: white;
-  opacity: 0.7;
+  background-color: rgba(255, 255, 255, 0.5);
   margin: 10%;
   padding: 15px;
   border-radius: 10px;
@@ -438,7 +441,6 @@ video {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   z-index: 300;
-  opacity: 1;
 }
 
 .habilidades__icono4 {
@@ -456,8 +458,7 @@ video {
           justify-content: center;
   height: 50%;
   width: 80%;
-  background-color: white;
-  opacity: 0.7;
+  background-color: rgba(255, 255, 255, 0.5);
   margin: 10%;
   padding: 15px;
   border-radius: 10px;
@@ -469,7 +470,6 @@ video {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   z-index: 300;
-  opacity: 1;
 }
 
 .habilidades__icono5 {
@@ -487,8 +487,7 @@ video {
           justify-content: center;
   height: 50%;
   width: 80%;
-  background-color: white;
-  opacity: 0.7;
+  background-color: rgba(255, 255, 255, 0.5);
   margin: 10%;
   padding: 15px;
   border-radius: 10px;
@@ -500,7 +499,6 @@ video {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   z-index: 300;
-  opacity: 1;
 }
 
 .habilidades__icono6 {
@@ -518,8 +516,7 @@ video {
           justify-content: center;
   height: 50%;
   width: 80%;
-  background-color: white;
-  opacity: 0.7;
+  background-color: rgba(255, 255, 255, 0.5);
   margin: 10%;
   padding: 15px;
   border-radius: 10px;
@@ -531,7 +528,6 @@ video {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   z-index: 300;
-  opacity: 1;
 }
 
 .habilidades__icono7 {
@@ -549,8 +545,7 @@ video {
           justify-content: center;
   height: 50%;
   width: 80%;
-  background-color: white;
-  opacity: 0.7;
+  background-color: rgba(255, 255, 255, 0.5);
   margin: 10%;
   padding: 15px;
   border-radius: 10px;
@@ -562,7 +557,6 @@ video {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   z-index: 300;
-  opacity: 1;
 }
 
 .habilidades__icono8 {
@@ -580,8 +574,7 @@ video {
           justify-content: center;
   height: 50%;
   width: 80%;
-  background-color: white;
-  opacity: 0.7;
+  background-color: rgba(255, 255, 255, 0.5);
   margin: 10%;
   padding: 15px;
   border-radius: 10px;
@@ -593,7 +586,6 @@ video {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   z-index: 300;
-  opacity: 1;
 }
 
 @media screen and (max-width: 600px) {
@@ -629,5 +621,32 @@ video {
     margin-top: -5%;
     font-size: 20px;
   }
+}
+
+.contenedor__separador--trabajos {
+  width: auto;
+  height: 100px;
+  background-color: white;
+}
+
+.trabajos {
+  padding: 5%;
+  padding-top: 10%;
+  background-color: white;
+  height: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.trabajos__carrousel {
+  border-radius: 10px;
+  background-color: white;
+  width: 100%;
+  height: auto;
+}
+
+.trabajos__images {
+  width: auto;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=mainPages.css.map */

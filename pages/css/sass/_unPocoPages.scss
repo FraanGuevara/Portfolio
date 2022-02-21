@@ -1,6 +1,8 @@
 $color_font--detalle: #ba8b02;
+$color_font: black;
 $font__detalle: 'Ubuntu', sans-serif;
 $font: 'Raleway', sans-serif;
+
 
 
 .contenedor__separador{
@@ -26,7 +28,7 @@ $font: 'Raleway', sans-serif;
             border-radius: 10px;
             height: auto;
             max-width: 400px;
-            margin-left: 30%;
+            margin: 10%
         }
     }
     &__texto{
@@ -72,10 +74,17 @@ $font: 'Raleway', sans-serif;
             margin-top: 10%;
             height: 300px;
             font-size: 13px;
+            
             &--txt{
                 font-weight: bold;
                 background-color: white;
-                filter: opacity(0.85);
+                background-color: rgba(255, 255, 255, 0.801);
+                h3{
+                    color: $color_font--detalle;
+                }
+                p{
+                    color: $color_font;
+                }
             }
         }
         &__image{

@@ -3,6 +3,7 @@ $font__detalle: 'Ubuntu', sans-serif;
 $font: 'Raleway', sans-serif;
 $color_font--detalle: #ba8b02;
 $color_borde:#ffb703;
+$color_font:black;
 
 
 .contenedor__separador{
@@ -24,7 +25,7 @@ $color_borde:#ffb703;
     border-radius: 15px 0px 0px 15px;
     border: solid 0.5px $color_borde;
     border-right: none;
-    background-color: white;
+    background-color: $color__fondoPerfil;
     &__image{
         padding: 0;
         width: auto;
@@ -52,6 +53,7 @@ $color_borde:#ffb703;
 .nombreJs__start{
     font-family: $font;
     font-weight: bolder;
+    color: $color_font;
 }
 
 .nombreJs__name{
@@ -68,6 +70,7 @@ $color_borde:#ffb703;
     font-size: 35px;
     font-style: normal;
     font-weight:600;
+    color: $color_font;
     &--skill{
         color: $color_font--detalle ;
         font-weight: bolder;
