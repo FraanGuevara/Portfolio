@@ -10,6 +10,8 @@ import CodeIcon from '@mui/icons-material/Code';
 import HideOnScroll from './HideOnScroll';
 import { createTheme } from '@mui/material/styles';
 import styles from './styles.module.css';
+import SwitchLanguage from './SwitchLanguage';
+import { CopyAll } from '@mui/icons-material';
 
 let theme = createTheme({
     palette: {
@@ -28,45 +30,50 @@ let theme = createTheme({
 
 
 
-function LabelBottomNavigation() {
+function LabelBottomNavigation({t}) {
     const [value, setValue] = useState('recents');
-
+    
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
-
+    
     return (
-        <BottomNavigation sx={{ width: '700px', backgroundColor:'#303030' }} value={value} onChange={handleChange}>
+        <>
+        <div style={{display:'flex', flexDirection:'row'}}>
+        <BottomNavigation sx={{ width: '600px', backgroundColor:'#303030' }} value={value} onChange={handleChange}>
             <BottomNavigationAction
                 theme={theme}
-                label="About me"
-                value="About me"
+                label={t("navbar.aboutMe")}
+                value={t("navbar.aboutMe")}
                 icon={<PersonPinIcon id={styles.navbarBotones}/>}
-            />
+                />
             <BottomNavigationAction
                 theme={theme}
-                label="Experience"
-                value="Experience"
+                label={t("navbar.experience")}
+                value={t("navbar.experience")}
                 icon={<WorkIcon id={styles.navbarBotones}/>}
-            />
+                />
             <BottomNavigationAction
                 theme={theme}
-                label="Proyects"
-                value="Proyects"
+                label={t("navbar.projects")}
+                value={t("navbar.projects")}
                 icon={<CodeIcon id={styles.navbarBotones}/>}
-            />
+                />
             <BottomNavigationAction
                 theme={theme}
-                label="Contact me"
-                value="Contact me"
+                label={t("navbar.contact")}
+                value={t("navbar.contact")}
                 icon={<MailIcon id={styles.navbarBotones}/>} />
-        </BottomNavigation>
+            </BottomNavigation>
+            <SwitchLanguage/>
+        </div>
+        </>
+        
     );
 }
 
 
-export default function Navbar(props) {
-
+export default function Navbar({props, t}) {
 
     return (
         <>
@@ -74,7 +81,9 @@ export default function Navbar(props) {
                 <AppBar id={styles.navbarFondo}>
                     <Toolbar sx={{ width: '100%', display: 'flex', justifyContent: 'space-between' }}>
                         <h2>Logo</h2>
-                        <LabelBottomNavigation />
+                        <LabelBottomNavigation 
+                        t={t}
+                        />
                     </Toolbar>
                 </AppBar>
             </HideOnScroll>

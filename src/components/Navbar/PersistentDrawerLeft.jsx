@@ -7,7 +7,6 @@ import MuiAppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import List from '@mui/material/List';
 import Typography from '@mui/material/Typography';
-import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
@@ -26,6 +25,7 @@ import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import HideOnScroll from './HideOnScroll';
 import { createTheme } from '@mui/material/styles';
 import styles from './styles.module.css';
+import SwitchLanguage from './SwitchLanguage';
 
 let theme = createTheme({
     palette: {
@@ -44,25 +44,6 @@ let theme = createTheme({
 
 
 const drawerWidth = 240;
-
-const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(
-    ({ theme, open }) => ({
-        flexGrow: 1,
-        padding: theme.spacing(3),
-        transition: theme.transitions.create('margin', {
-            easing: theme.transitions.easing.sharp,
-            duration: theme.transitions.duration.leavingScreen,
-        }),
-        marginLeft: `-${drawerWidth}px`,
-        ...(open && {
-            transition: theme.transitions.create('margin', {
-                easing: theme.transitions.easing.easeOut,
-                duration: theme.transitions.duration.enteringScreen,
-            }),
-            marginLeft: 0,
-        }),
-    }),
-);
 
 const AppBar = styled(MuiAppBar, {
     shouldForwardProp: (prop) => prop !== 'open',
@@ -91,7 +72,8 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 }));
 
 
-export default function PersistentDrawerLeft(props) {
+export default function PersistentDrawerLeft({props, t}) {
+    /* console.log(t) */
     const theme = useTheme();
     const [open, setOpen] = React.useState(false);
 
@@ -105,7 +87,7 @@ export default function PersistentDrawerLeft(props) {
 
     return (
         <HideOnScroll {...props}>
-            <Box sx={{ display: 'flex'}}>
+            <Box sx={{ display: 'flex' }}>
                 <CssBaseline />
                 <AppBar position="fixed" open={open}>
                     <Toolbar id={styles.navbarFondo}>
@@ -116,7 +98,7 @@ export default function PersistentDrawerLeft(props) {
                             edge="start"
                             sx={{ mr: 2, ...(open && { display: 'none' }) }}
                         >
-                            <MenuIcon id={styles.navbarBotones}/>
+                            <MenuIcon id={styles.navbarBotones} />
                         </IconButton>
                         <Typography variant="h6" noWrap component="div"
                             sx={{ width: '100%', display: 'flex', justifyContent: 'right' }}>
@@ -131,14 +113,15 @@ export default function PersistentDrawerLeft(props) {
                         '& .MuiDrawer-paper': {
                             width: drawerWidth,
                             boxSizing: 'border-box',
-                            border:'none'
+                            border: 'none'
                         },
                     }}
                     variant="persistent"
                     anchor="left"
                     open={open}
-                    
+
                 >
+
                     <DrawerHeader id={styles.navbarFondoDrawer} >
                         <IconButton id={styles.navbarBotones} onClick={handleDrawerClose}>
                             {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
@@ -147,14 +130,14 @@ export default function PersistentDrawerLeft(props) {
 
                     {/* TEXTO E ICONOS DE ARRIBA */}
                     <List id={styles.navbarFondoDrawer}>
-                        {['About me', 'Experience', 'Proyects', 'Contact me'].map((text, index) => (
+                        {[t("navbar.aboutMe"), t("navbar.experience"), t("navbar.projects"), t("navbar.contact")].map((text, index) => (
                             <ListItem key={text} disablePadding>
                                 <ListItemButton id={styles.navbarBotonesTexto}>
                                     <ListItemIcon id={styles.navbarBotones}>
-                                        {index === 0 ? <PersonPinIcon/> :
-                                            index === 1 ? <WorkIcon/> :
-                                                index === 2 ? <CodeIcon/> :
-                                                    <MailIcon/>}
+                                        {index === 0 ? <PersonPinIcon /> :
+                                            index === 1 ? <WorkIcon /> :
+                                                index === 2 ? <CodeIcon /> :
+                                                    <MailIcon />}
                                     </ListItemIcon>
                                     <ListItemText primary={text} />
                                 </ListItemButton>
@@ -163,7 +146,7 @@ export default function PersistentDrawerLeft(props) {
                     </List>
 
                     {/* TEXTO E ICONOS DE ABAJO */}
-                    <List id={styles.navbarFondoDrawer} sx={{height:'100%', display:'flex', flexDirection:'column', justifyContent:'end'}}>
+                    <List id={styles.navbarFondoDrawer} sx={{ height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'end' }}>
                         {['Git-hub', 'Linkedin', 'Gmail'].map((text, index) => (
                             <ListItem key={text} disablePadding>
                                 <ListItemButton id={styles.navbarBotonesTexto}>
@@ -177,6 +160,9 @@ export default function PersistentDrawerLeft(props) {
                             </ListItem>
                         ))}
                     </List>
+                    <div id={styles.navbarFondoDrawer} style={{ display: 'flex', justifyContent: 'flex-end' }}>
+                            <SwitchLanguage />
+                        </div>
                 </Drawer>
             </Box>
         </HideOnScroll>

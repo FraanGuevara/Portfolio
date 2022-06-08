@@ -1,0 +1,38 @@
+video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.capa{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:black;
+    opacity: 0.35;
+    mix-blend-mode: overlay;
+    z-index: -1;
+}
+
+.containerBoton{
+    display: grid;
+    justify-content: center;
+    align-items: flex-end;
+    height: 95vh;
+}
+
+#botonHome{
+    color:#ebff05;
+    border:solid 3px #ebff05;
+}
+
+#botonHome:hover{
+    color:white;
+    background-color:rgba(234, 255, 5, 0.300);
+}

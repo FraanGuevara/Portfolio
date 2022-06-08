@@ -9,18 +9,22 @@ function HideOnScroll(props) {
     
 }
 
-export default function NavbarOrDrawer() {
+export default function NavbarOrDrawer({t}) {
     const isDesktopOrLaptop = useMediaQuery({
         query: '(min-width: 900px)'
     })
 
-
     return (
         <>
-
             {isDesktopOrLaptop ? 
-            <Navbar HideOnScroll={<HideOnScroll/>} /> : 
-            <PersistentDrawerLeft HideOnScroll={<HideOnScroll/>} />}
+            <Navbar 
+            HideOnScroll={<HideOnScroll/>} 
+            t={t}
+            /> : 
+            <PersistentDrawerLeft 
+            HideOnScroll={<HideOnScroll/>}
+            t={t}
+            />}
         </>
     )
 }

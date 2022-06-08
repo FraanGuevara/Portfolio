@@ -1,0 +1,12 @@
+{
+    "inicio":{
+        "copy":"Design and built by FraanGuevara ©"
+    },
+    "navbar":{
+        "aboutMe":"About Me",
+        "experience":"Experience",
+        "projects":"Projects",
+        "contact":"Contact me"
+    }
+
+}
