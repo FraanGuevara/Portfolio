@@ -7,6 +7,13 @@
         "experience":"Experience",
         "projects":"Projects",
         "contact":"Contact me"
+    },
+    "home":{
+        "hello":"Hello, my name is",
+        "iam":"And I'm",
+        "typeWriteEffect":"Software developer",
+        "typeWriteEffect2":"Frontend developer",
+        "typeWriteEffect3":"A programming lover"
     }
 
 }

@@ -1,9 +1,11 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
-import ButtonHome from './components/Home/ButtonHome';
-import Home from './components/Home/Home';
-import NavbarOrDrawer from './components/Navbar/NavbarOrDrawer';
+import ButtonInicio from './components/Inicio/ButtonInicio';
+import Inicio from './components/Inicio/Inicio';
+
 import { useTranslation } from 'react-i18next';
+import Home from './components/Home/Home';
+import Container from './components/Container/Container';
 
 function App() {
 
@@ -14,13 +16,12 @@ function App() {
   return (
     < >
     <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Home t={t} />} />
-      <Route path='/' element={<ButtonHome/>}/>
-      <Route path="/portfolio" element={<NavbarOrDrawer t={t}/>} />
-    </Routes>
-    {/* <NavbarOrDrawer/> */}
-    
+      <Routes>
+        <Route path="/" element={<Inicio t={t} />} />
+        <Route path='/' element={<ButtonInicio/>}/>
+        <Route exact path='/portfolio' element={<Container t={t} />}/>
+        <Route path='*' element={<h1>Not found</h1>}/>
+      </Routes>
     </BrowserRouter>
     </>
   );

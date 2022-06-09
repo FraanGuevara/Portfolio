@@ -26,6 +26,7 @@ import HideOnScroll from './HideOnScroll';
 import { createTheme } from '@mui/material/styles';
 import styles from './styles.module.css';
 import SwitchLanguage from './SwitchLanguage';
+import logo from '../../img/LogoFG.png'
 
 let theme = createTheme({
     palette: {
@@ -102,7 +103,7 @@ export default function PersistentDrawerLeft({props, t}) {
                         </IconButton>
                         <Typography variant="h6" noWrap component="div"
                             sx={{ width: '100%', display: 'flex', justifyContent: 'right' }}>
-                            FG
+                            <img src={logo} alt="Logo FG" style={{width:'70px', margin:'10px 0'}} />
                         </Typography>
                     </Toolbar>
                 </AppBar>

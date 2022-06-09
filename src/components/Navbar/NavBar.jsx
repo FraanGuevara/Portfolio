@@ -11,7 +11,9 @@ import HideOnScroll from './HideOnScroll';
 import { createTheme } from '@mui/material/styles';
 import styles from './styles.module.css';
 import SwitchLanguage from './SwitchLanguage';
-import { CopyAll } from '@mui/icons-material';
+import logo from '../../img/LogoFG.png'
+import { Link } from 'react-router-dom';
+
 
 let theme = createTheme({
     palette: {
@@ -80,7 +82,10 @@ export default function Navbar({props, t}) {
             <HideOnScroll {...props}>
                 <AppBar id={styles.navbarFondo}>
                     <Toolbar sx={{ width: '100%', display: 'flex', justifyContent: 'space-between' }}>
-                        <h2>Logo</h2>
+                        <Link to='/portfolio'>
+                            <img src={logo} alt="logo FG" style={{width:'85px', margin:'10px 0'}} />
+                        </Link>
+
                         <LabelBottomNavigation 
                         t={t}
                         />

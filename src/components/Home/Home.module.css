@@ -1,38 +1,40 @@
-video{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
-.capa{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background:black;
-    opacity: 0.35;
-    mix-blend-mode: overlay;
-    z-index: -1;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 
-.containerBoton{
-    display: grid;
+.homeContainer{
+    margin: 0 auto;
+    padding: 0;
+    height: 100vh;
+    background-color: #303030;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
-    height: 95vh;
+    align-items: center;
+    color: white;
+    font-family: 'Kanit', sans-serif;
 }
 
-#botonHome{
-    color:#ebff05;
-    border:solid 3px #ebff05;
+.typeEffect{
+    height: 50px;
+}
+h1{
+    font-size: 75px;
+    font-weight: 600;
+    margin: 0 auto;
+    text-align: center;
 }
 
-#botonHome:hover{
-    color:white;
-    background-color:rgba(234, 255, 5, 0.300);
+h3{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 25px;
+    font-weight: 100 !important;
+    color: rgba(0, 255, 255, 0.502) 
+}
+
+h4{
+    height: 20px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight:normal;
+    font-size: 25px;
 }
