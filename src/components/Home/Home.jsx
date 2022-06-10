@@ -25,11 +25,6 @@ export default function Home({ t }) {
         setLoading(false);}, 1500);
     }, [text])
 
-    console.log(text)
-    console.log(loading)
-    console.log(t("home.typeWriteEffect"))
-
-
     return (
         <>
 
@@ -45,6 +40,7 @@ export default function Home({ t }) {
                             color: '#ebff05',
                             fontWeight: 500,
                             fontSize: '1.5em',
+                            textAlign: 'center',
                         }}
                         multiTextLoop={true}
                         startDelay={1000}
