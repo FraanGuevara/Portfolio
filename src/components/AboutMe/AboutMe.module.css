@@ -1,31 +1,99 @@
-.aboutMeContainer{
+.aboutMeContainer {
     width: 100%;
     height: 100vh;
     background-image: url(../../img/fondoAboutMe.jpg);
-    background-attachment:fixed;
+    background-attachment: fixed;
     color: white;
     display: flex;
+    flex-direction: row;
     align-items: center;
-
+    justify-content: center;
 }
 
-#AboutMeText{
+svg{
+    fill: #000000;
+    animation: tronFilter 12s infinite !important;
+}
+
+
+
+
+#AboutMeText {
     width: 50%;
-    text-align: left;
-    background-color: rgb(66, 66, 66, 0.7);
+    text-align: center;
+    background-color: rgba(66, 66, 66, 0) !important;
     padding: 5%;
     border-radius: 15px;
-    border: solid 2px rgba(0, 255, 255, 0.502);
+    margin:auto;
+    position: absolute;
+    z-index: 1;
+    /* border: solid 2px rgba(0, 255, 255, 0.502); */
+    /* ------------------------ */
+    padding: 0;
+    animation: tronFilter 12s infinite;
+    fill: #000000;
+    stroke: #666;
+    stroke-width: 5;
+    stroke-linecap: round;
+    stroke-linejoin: bevel;
 }
 
-.AboutMeText__h1{
-    text-align: left;
-    /* color: rgba(0, 255, 255, 0.502) */;
+@keyframes tronFilter {
+    0% {
+        -webkit-filter: drop-shadow(-.75px 0px 100px #31eefd);
+        filter: drop-shadow(-.75px 0px 100px #31eefd);
+        stroke: #31eefd;
+    }
+
+    22% {
+        -webkit-filter: drop-shadow(-.75px 0px 200px #1d85bb);
+        filter: drop-shadow(-.75px 0px 200px #1d85bb);
+        stroke: #1d85bb;
+    }
+
+    /* end blue */
+
+    42% {
+        -webkit-filter: drop-shadow(-.75px 0px 100px #884173);
+        filter: drop-shadow(-.75px 0px 100px #884173);
+        stroke: #884173;
+    }
+
+    62% {
+        -webkit-filter: drop-shadow(-.75px 0px 200px #ff0071);
+        filter: drop-shadow(-.75px 0px 200px #ff0071);
+        stroke: #ff0071;
+    }
+
+    /* end magenta */
+    82% {
+        -webkit-filter: drop-shadow(-.75px 0px 100px #009997);
+        filter: drop-shadow(-.75px 0px 100px #009997);
+        stroke: #009997;
+    }
+
+    92% {
+        -webkit-filter: drop-shadow(-.75px 0px 200px #92ffd7);
+        filter: drop-shadow(-.75px 0px 200px #92ffd7);
+        stroke: #92ffd7;
+    }
+
+    /* end green */
+    100% {
+        -webkit-filter: drop-shadow(-.75px 0px 100px #31eefd);
+        filter: drop-shadow(-.75px 0px 100px #31eefd);
+        stroke: #31eefd;
+    }
 }
 
-.AboutMeText__p{
+.AboutMeText__h1 {
+    text-align: center;
+    /* color: rgba(0, 255, 255, 0.502) */
+    ;
+}
+
+.AboutMeText__p {
     width: 75%;
     font-size: 25px;
     font-weight: 400;
 }
-

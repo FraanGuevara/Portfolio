@@ -19,7 +19,7 @@ let theme = createTheme({
     palette: {
         type: 'dark',
         primary: {
-            main: '#ebff05',
+            main: '#ffffff',
         },
         secondary: {
             main: '#26e4a0',
@@ -42,8 +42,9 @@ function LabelBottomNavigation({t}) {
     return (
         <>
         <div style={{display:'flex', flexDirection:'row'}}>
-        <BottomNavigation sx={{ width: '600px', backgroundColor:'#303030' }} value={value} onChange={handleChange}>
+        <BottomNavigation sx={{ width: '700px', backgroundColor:'#303030' }} value={value} onChange={handleChange}>
             <BottomNavigationAction
+            id={styles.textEffecSvg}
                 theme={theme}
                 label={t("navbar.aboutMe")}
                 value={t("navbar.aboutMe")}
