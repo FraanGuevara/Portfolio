@@ -73,7 +73,7 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 }));
 
 
-export default function PersistentDrawerLeft({props, t}) {
+export default function PersistentDrawerLeft({ props, t }) {
     /* console.log(t) */
     const theme = useTheme();
     const [open, setOpen] = React.useState(false);
@@ -103,7 +103,7 @@ export default function PersistentDrawerLeft({props, t}) {
                         </IconButton>
                         <Typography variant="h6" noWrap component="div"
                             sx={{ width: '100%', display: 'flex', justifyContent: 'right' }}>
-                            <img src={logo} alt="Logo FG" style={{width:'70px', margin:'10px 0'}} />
+                            <img src={logo} alt="Logo FG" style={{ width: '70px', margin: '10px 0' }} />
                         </Typography>
                     </Toolbar>
                 </AppBar>
@@ -120,10 +120,12 @@ export default function PersistentDrawerLeft({props, t}) {
                     variant="persistent"
                     anchor="left"
                     open={open}
-
                 >
 
                     <DrawerHeader id={styles.navbarFondoDrawer} >
+                    <div id={styles.navbarFondoDrawer} style={{ display: 'flex', justifyContent: 'flex-end' }}>
+                        <SwitchLanguage />
+                    </div>
                         <IconButton id={styles.navbarBotones} onClick={handleDrawerClose}>
                             {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
                         </IconButton>
@@ -161,9 +163,7 @@ export default function PersistentDrawerLeft({props, t}) {
                             </ListItem>
                         ))}
                     </List>
-                    <div id={styles.navbarFondoDrawer} style={{ display: 'flex', justifyContent: 'flex-end' }}>
-                            <SwitchLanguage />
-                        </div>
+                    
                 </Drawer>
             </Box>
         </HideOnScroll>
