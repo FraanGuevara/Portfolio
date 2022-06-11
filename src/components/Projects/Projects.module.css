@@ -48,12 +48,79 @@
 .celularImg {
     width: 450px;
 }
+/* CARROUSEL DE PROYECTOS */
 
 #slickCarousel{
     min-height: 380px;
     min-width: 380px;
 }
 
+.capa{
+    position: absolute;
+    bottom: auto;
+    left: auto;
+    width: 85%;
+    height: 70%;
+    backdrop-filter: blur(2px) contrast(0.5);
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+
+.slickCarouselAuraflow{
+    background-image: url('../../img/img-projects/AuraFlow.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    
+    
+}
+.slickCarouselSapphire{
+    background-image: url('../../img/img-projects/sapphireBar.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.slickCarouselMimi{
+    background-image: url('../../img/img-projects/mimiPasteleria.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.slickCarouselPilates{
+    background-image: url('../../img/img-projects/arPilates.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.slickCarouselRosario{
+    background-image: url('../../img/img-projects/rosarioJobs.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.slickCarouselColor{
+    background-image: url('../../img/img-projects/colorGame.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.slickCarouselPortfolio{
+    background-image: url('../../img/img-projects/portfolio.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.slickCarouselGithub{
+    background-image: url('../../img/img-projects/gitHub.JPG');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
 
 
 
