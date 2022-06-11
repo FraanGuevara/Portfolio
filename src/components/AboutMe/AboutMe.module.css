@@ -94,10 +94,13 @@ svg{
     position: absolute;
     height: 150px;
     width: 60%;
-    font-size: 1px;
+    font-size: 0.1px;
     font-weight: 400;
     transition: ease-in-out 1s ;
-    color: #000000;
+    display: flex;
+    align-items: center;
+    transform: scale(0.5);
+    font-family: 'Roboto Mono', monospace;
 }
 
 .AboutMeText__p:hover{
@@ -110,6 +113,31 @@ svg{
     transform: scale(1.1);
     transition: ease-in-out 1s ;
 }
+
+#touchIcon{
+    position:absolute;
+    left:50px;
+    top:185%;
+    font-size:80px;
+    animation: none !important;
+    animation: touch 3s infinite !important;
+    transform: ease-in-out;
+    color: #ebff05;
+}
+
+@keyframes touch{
+    0%{
+        transform: scale(1.2);
+    }
+    50%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
+
+
 
 @media (max-width: 900px) {
     .aboutMeContainer {
@@ -138,5 +166,15 @@ svg{
         font-size: 13px;
     }
 
+    #touchIcon{
+        position:absolute;
+        left:30px;
+        top:190%;
+        font-size:40px;
+        animation: none !important;
+        animation: touch 3s infinite !important;
+        transform: ease-in-out;
+        color: #ebff05;
+    }
 
 }

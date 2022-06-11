@@ -4,8 +4,8 @@
     },
     "navbar":{
         "aboutMe":"Sobre mi",
-        "experience":"Experiencia",
-        "projects":"Proyectos",
+        "experience":"Proyectos",
+        "projects":"Habilidades",
         "contact":"Contactame"
     },
     "home":{
@@ -14,5 +14,9 @@
         "typeWriteEffect":"Desarrollador de software",
         "typeWriteEffect2": "Desarrollador Frontend", 
         "typeWriteEffect3":"Apasionado de la programacion"
+    },
+    "aboutMe":{
+        "about":"Sobre mi",
+        "text":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur fugit vero eaque velit aspernatur possimus dolores officiis voluptatem, recusandae odit necessitatibus? Quidem velit modi dolore doloremque voluptate distinctio repudiandae incidunt!"
     }
 }

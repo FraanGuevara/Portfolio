@@ -25,10 +25,6 @@ export default function Home({ t }) {
         setLoading(false);}, 1500);
     }, [text])
 
-    console.log(text)
-    console.log(loading)
-    console.log(t("home.typeWriteEffect"))
-
 
     return (
         <>
