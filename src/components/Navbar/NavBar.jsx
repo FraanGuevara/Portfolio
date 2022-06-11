@@ -42,7 +42,7 @@ function LabelBottomNavigation({t}) {
     return (
         <>
         <div style={{display:'flex', flexDirection:'row'}}>
-        <BottomNavigation sx={{ width: '700px', backgroundColor:'#303030' }} value={value} onChange={handleChange}>
+        <BottomNavigation sx={{ width: '700px', backgroundColor:'#111827' }} value={value} onChange={handleChange}>
             <BottomNavigationAction
             id={styles.textEffecSvg}
                 theme={theme}

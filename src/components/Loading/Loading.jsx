@@ -6,7 +6,7 @@ export default function Loading() {
 
     return (
         <>
-            <div style={{display:'flex', justifyContent:'center', alignItems:'center', height:'100vh', backgroundColor:'#303030'}}>
+            <div style={{display:'flex', justifyContent:'center', alignItems:'center', height:'100vh', backgroundColor:'#111827'}}>
             <CircularProgress />
             </div>
 
