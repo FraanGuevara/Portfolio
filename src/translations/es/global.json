@@ -3,20 +3,40 @@
         "copy":"Diseñado y construido por FraanGuevara ©"
     },
     "navbar":{
-        "aboutMe":"Sobre mi",
+        "aboutMe":"Sobre mí",
         "experience":"Proyectos",
         "projects":"Habilidades",
-        "contact":"Contactame"
+        "contact":"Contáctame"
     },
     "home":{
         "hello":"Hola, mi nombre es",
         "iam":"Y soy un",
         "typeWriteEffect":"Desarrollador de software",
         "typeWriteEffect2": "Desarrollador Frontend", 
-        "typeWriteEffect3":"Apasionado de la programacion"
+        "typeWriteEffect3":"Apasionado de la programación"
     },
     "aboutMe":{
         "about":"Sobre mi",
         "text":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur fugit vero eaque velit aspernatur possimus dolores officiis voluptatem, recusandae odit necessitatibus? Quidem velit modi dolore doloremque voluptate distinctio repudiandae incidunt!"
+    },
+    "projects":{
+        "projects":"Proyectos",
+        "auraflowTitle":"Auraflow Tienda",
+        "auraflowText":"e-commerce de Gorras, donde el usuario va a poder ver la cantidad de productos total de la página, filtrar por categorías, agregar items al carrito y luego realizar el checkout del mismo.",
+        "sapphireTitle":"Sapphire Bar",
+        "sapphireText":"El proyecto se basa en un 'recibidor' de clientes para bar/restaurante. Cuenta con un sistema de reservas y 2 carritos. La idea es que la App corra en una terminal de pantalla táctil en la entrada (del bar o restaurante) para que las personas puedan, ya sea solicitar una mesa, realizar un pedido de tragos y/o comida para llevar.",
+        "mimiTitle":"Mimi Pastelería",
+        "mimiText":"Pagina para 'Mimi Pastelería' de Mara Schimpf, web estatica con carta de productos, links a redes, botón de WhatsApp.",
+        "pilatesTitle":"Ar Pilates",
+        "pilatesText":"Web estática, maquetación e implementación de sass.",
+        "rosarioJobsTitle":"Rosario Jobs",
+        "rosarioJobsText":"Pagina de búsqueda de empleos, para bootcamp Tzuzul code React.",
+        "rosarioJobsText2":"Logueo Empleador: [crear empleos/ver empleos generados/ ver cantidad de postulantes en cada empleo.] Logueo Trabajador: [ver empleos/postularse/filtrar/guardar empleos favoritos]",
+        "colorGameTitle":"Color Game",
+        "colorGameText":"juego que se basa en adivinar el color que se describe en el titulo en forma de rgb, clickeando cada uno de los cuadrados.Tiene la funcionalidad de cambiar el nivel de dificultad con los botones EASY / STANDAR / HARD.",
+        "portfolioTitle":"Portfolio",
+        "portfolioText":"Portfolio creado en React Js con implementación de otras tecnologias.",
+        "githubTitle":"Portfolio",
+        "githubText":"GitHub propio donde van a poder ver los proyectos finalizados y en los cuales estoy trabajando actualmente."
     }
-}
+    }

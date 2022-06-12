@@ -6,7 +6,7 @@ import { useMediaQuery } from 'react-responsive';
 import { useState, useEffect } from "react";
 import BotoneraCardCarousel from './BotoneraCardCarousel';
 
-export default function Carrousel({ setLinkIframe }) {
+export default function Carrousel({ setLinkIframe, t }) {
 
     const [mobile, setMobile] = useState(3);
 
@@ -76,9 +76,9 @@ export default function Carrousel({ setLinkIframe }) {
                             />
                         </div>
                         <div>
-                            <p className={styles.titleCardCarousel}>Auraflow Store</p>
+                            <p className={styles.titleCardCarousel}>{t("projects.auraflowTitle")}</p>
                             <p className={styles.textCardCarousel}>
-                                e-commerce de Gorras, donde el usuario va a poder ver la cantidad de productos total de la pagina, filtrar por categorias, agregar items al carrito y luego realizar el checkout del mismo.
+                            {t("projects.auraflowText")}
                             </p>
                         </div>
                     </div>
@@ -93,9 +93,9 @@ export default function Carrousel({ setLinkIframe }) {
                             />
                         </div>
                         <div>
-                            <p className={styles.titleCardCarousel}>Sapphire Bar</p>
+                            <p className={styles.titleCardCarousel}>{t("projects.sapphireTitle")}</p>
                             <p className={styles.textCardCarousel}>
-                                El proyecto se basa en un "recibidor" de clientes para bar/restaurante. Cuenta con un sistema de reservas y 2 carritos. La idea es que la App corra en una terminal de pantalla tactil en la entrada (del bar o restaurante) para que las personas puedan, ya sea solicitar una mesa, realizar un pedido de tragos y/o comida para llevar.
+                            {t("projects.sapphireText")}
                             </p>
                         </div>
                     </div>
@@ -110,9 +110,9 @@ export default function Carrousel({ setLinkIframe }) {
                             />
                         </div>
                         <div>
-                            <p className={styles.titleCardCarousel}>Mimi Pasteleria</p>
+                            <p className={styles.titleCardCarousel}>{t("projects.mimiTitle")}</p>
                             <p className={styles.textCardCarousel}>
-                                Pagina para "Mimi Pasteleria" de Mara Schimpf, web estatica con carta de productos, links a redes, boton de whatsapp.
+                            {t("projects.mimiText")}
                             </p>
                         </div>
                     </div>
@@ -127,9 +127,9 @@ export default function Carrousel({ setLinkIframe }) {
                             />
                         </div>
                         <div>
-                            <p className={styles.titleCardCarousel}>Ar Pilates</p>
+                            <p className={styles.titleCardCarousel}>{t("projects.pilatesTitle")}</p>
                             <p className={styles.textCardCarousel}>
-                                Web estatica, maquetacion e implementacion de sass.
+                            {t("projects.pilatesText")}
                             </p>
                         </div>
                     </div>
@@ -144,13 +144,12 @@ export default function Carrousel({ setLinkIframe }) {
                             />
                         </div>
                         <div>
-                            <p className={styles.titleCardCarousel}>Rosario Jobs</p>
+                            <p className={styles.titleCardCarousel}>{t("projects.rosarioJobsTitle")}</p>
                             <p className={styles.textCardCarousel}>
-                                Pagina de busqueda de empleos, para bootcamp Tzuzul code React.
-                                <p className={styles.textCardCarousel}>
-                                Logueo Empleador [crear empleos/ver empleos generados/ ver cantidad de postulantes en cada empleo]
+                            {t("projects.rosarioJobsText")}
                                 </p>
-                                Logueo Trabajador [ver empleos/postularse/filtrar/guardar empleos favoritos]
+                                <p className={styles.textCardCarousel}>
+                                {t("projects.rosarioJobsText2")}
                             </p>
                         </div>
                     </div>
@@ -165,10 +164,9 @@ export default function Carrousel({ setLinkIframe }) {
                             />
                         </div>
                         <div>
-                            <p className={styles.titleCardCarousel}>Color Game</p>
+                            <p className={styles.titleCardCarousel}>{t("projects.colorGameTitle")}</p>
                             <p className={styles.textCardCarousel}>
-                            juego que se basa en adivinar el color que se describe en el titulo en forma de rgb, clickeando cada uno de los cuadrados.
-                            Tiene la funcionalidad de cambiar el nivel de dificultad con los botones EASY / STANDAR / HARD.
+                            {t("projects.colorGameText")}
                             </p>
                         </div>
                     </div>
@@ -183,9 +181,9 @@ export default function Carrousel({ setLinkIframe }) {
                             />
                         </div>
                         <div>
-                            <p className={styles.titleCardCarousel}>Portfolio</p>
+                            <p className={styles.titleCardCarousel}>{t("projects.portfolioTitle")}</p>
                             <p className={styles.textCardCarousel}>
-                                Portfolio creado en React Js con implementacion de otras tecnologias.
+                            {t("projects.portfolioText")}
                             </p>
                         </div>
                     </div>
@@ -200,9 +198,9 @@ export default function Carrousel({ setLinkIframe }) {
                             />
                         </div>
                         <div>
-                            <p className={styles.titleCardCarousel}>Github</p>
+                            <p className={styles.titleCardCarousel}>{t("projects.githubTitle")}</p>
                             <p className={styles.textCardCarousel}>
-                                Github propio donde van a poder ver los proyectos finalizados y en los cuales estoy trabajando actualmente.
+                            {t("projects.githubText")}
                             </p>
                         </div>
                     </div>

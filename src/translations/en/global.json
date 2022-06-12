@@ -18,6 +18,26 @@
     "aboutMe":{
         "about":"About me",
         "text":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur fugit vero eaque velit aspernatur possimus dolores officiis voluptatem, recusandae odit necessitatibus? Quidem velit modi dolore doloremque voluptate distinctio repudiandae incidunt!"
+    },
+    "projects":{
+        "projects":"Projects",
+        "auraflowTitle":"Auraflow Store",
+        "auraflowText":"Caps e-commerce, where the user will be able to see the total number of products on the page, filter by categories, add items to the cart and then checkout it.",
+        "sapphireTitle":"Sapphire Bar",
+        "sapphireText":"The project is based on a 'receiver' for clients for a bar/restaurant. It has a reservation system and 2 carts. The idea is that the App runs on a touch screen terminal at the entrance (of the bar or restaurant) so that people can either request a table, place an order for drinks and/or takeaway food.",
+        "mimiTitle":"Mimi Pasteleria",
+        "mimiText":"Page for 'Mimi Pasteleria' by Mara Schimpf, static website with product menu, links to networks, whatsapp button.",
+        "pilatesTitle":"Ar Pilates",
+        "pilatesText":"Static web, layout and implementation of sass.",
+        "rosarioJobsTitle":"Rosario Jobs",
+        "rosarioJobsText":"Job search page, for bootcamp Tzuzul code React.",
+        "rosarioJobsText2":"Employer Login: [create jobs/view jobs generated/view number of applicants for each job.] Worker Login: [view jobs/apply/filter/save favorite jobs]",
+        "colorGameTitle":"Color Game",
+        "colorGameText":"Game that is based on guessing the color that is described in the title in rgb form, clicking each one of the squares. It has the functionality of changing the level of difficulty with the EASY / STANDAR / HARD buttons.",
+        "portfolioTitle":"Portfolio",
+        "portfolioText":"Portfolio created in React Js with implementation of other technologies.",
+        "githubTitle":"Github",
+        "githubText":"Own Github where you will be able to see the finished projects and in which I am currently working."
     }
 
 }
