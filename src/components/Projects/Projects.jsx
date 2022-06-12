@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styles from './Projects.module.css';
 import computadora from '../../img/computadoraProyecto.webp';
 /* import celular from '../../img/celularProyecto.webp'; */
@@ -8,26 +8,25 @@ import Carrousel from './Carrousel';
 
 export default function Projects() {
 
-
-
+    const [linkIframe, setLinkIframe] = useState('');
 
     return (
         <>
         <div id={styles.mobileProjects}>
             <div id={styles.textProjects}>
-                <h2 >PROJECTOS</h2>
+                <h2 id={styles.titleProjects}><hr id={styles.hrTitleProjects}/>Proyectos <hr id={styles.hrTitleProjects}/></h2>
             </div>
             <div className={styles.containerProjects}>
                 <div className={styles.desktop}>
                     <img className={styles.desktopImg} src={computadora} alt="" />
-                    <iframe className={styles.desktopIframe} src="https://fraanguevara.github.io/ProyectoPasteleria/" loading="lazy" tabindex="-1"></iframe>
+                    <iframe className={styles.desktopIframe} src={linkIframe} loading="lazy" tabindex="-1"></iframe>
                 </div>
                 <div className={styles.celular}>
                     <img className={styles.celularImg} src={celular} alt="" />
-                    <iframe className={styles.celularIframe} src="https://auraflow.netlify.app" loading="lazy" tabindex="-1"></iframe>
+                    <iframe className={styles.celularIframe} src={linkIframe} loading="lazy" tabindex="-1"></iframe>
                 </div>
             </div>
-            <Carrousel />
+            <Carrousel setLinkIframe={setLinkIframe} />
         </div>
             
         </>

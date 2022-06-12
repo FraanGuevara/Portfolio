@@ -7,6 +7,25 @@
     height: 150px;
 }
 
+#titleProjects{
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 75px;
+    font-weight: 600;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: tronFilter 12s infinite;
+}
+
+#hrTitleProjects{
+    width: 20%;
+    border-color: #ebff05;
+}
+
+
 .containerProjects {
     height: auto;
     width: 100%;
@@ -61,14 +80,45 @@
     left: auto;
     width: 85%;
     height: 70%;
-    backdrop-filter: blur(2px) contrast(0.5);
+    background-color: rgba(17, 24, 39, 0.85);
+    backdrop-filter: blur(5px) /* contrast(0.25) */;
     padding: 10px;
     border-radius: 15px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     color: white;
-    
+}
+
+.divTextCardCarousel{
+    margin-top: 0px;
+}
+
+.titleCardCarousel{
+    font-weight: 900;
+    font-size:25px;
+    margin-top: 0px;
+    margin-bottom:10px;
+    color:#ebff05;
+}
+
+.textCardCarousel{
+    font-size:14px;
+    font-family: 'Roboto Mono', sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 0px;
+}
+
+
+#iconosCardCarousel{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+    margin-bottom: 10%;
+    color: white;
 }
 
 .slickCarouselAuraflow{
@@ -176,5 +226,8 @@
     }
     .celular{
         display: none;
+    }
+    .textCardCarousel{
+        font-size:12px;
     }
 }
