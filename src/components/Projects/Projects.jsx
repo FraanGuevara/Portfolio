@@ -19,11 +19,11 @@ export default function Projects({ t }) {
                 <div className={styles.containerProjects}>
                     <div className={styles.desktop}>
                         <img className={styles.desktopImg} src={computadora} alt="" />
-                        <iframe className={styles.desktopIframe} src={linkIframe} loading="lazy" tabindex="-1"></iframe>
+                        <iframe className={styles.desktopIframe} src={linkIframe} loading="lazy" tabIndex="-1"></iframe>
                     </div>
                     <div className={styles.celular}>
                         <img className={styles.celularImg} src={celular} alt="" />
-                        <iframe className={styles.celularIframe} src={linkIframe} loading="lazy" tabindex="-1"></iframe>
+                        <iframe className={styles.celularIframe} src={linkIframe} loading="lazy" tabIndex="-1"></iframe>
                     </div>
                 </div>
                 <Carrousel 
@@ -35,4 +35,3 @@ export default function Projects({ t }) {
         </>
     )
 }
-{/* <img className={styles.celularImg}  src={celular} alt="" /> */ }

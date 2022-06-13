@@ -55,7 +55,7 @@ export default function Carrousel({ setLinkIframe, t }) {
     return (
         <>
             <Swiper
-                minHeight={500}
+                /* minHeight={500} */
                 slidesPerView={mobile}
                 spaceBetween={30}
                 freeMode={true}

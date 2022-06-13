@@ -15,10 +15,12 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-i18next": "^11.17.0",
+    "react-icon-cloud": "^2.0.1",
     "react-responsive": "^9.0.0-beta.8",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "react-typewriter-effect": "^1.1.0",
+    "simple-icons": "^5.14.0",
     "swiper": "^8.2.3",
     "web-vitals": "^2.1.4"
   },

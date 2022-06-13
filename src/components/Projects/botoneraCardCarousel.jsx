@@ -14,9 +14,7 @@ export default function BotoneraCardCarousel({link, repositorio, setLinkIframe})
     query: '(min-width: 900px)'
 })
 
-const cellphone = useMediaQuery({
-  query: '(min-width: 450px)'
-})
+
 useEffect(() => {
   if (!isDesktopOrLaptop) {
     setSizeIcon('40px');
@@ -25,7 +23,6 @@ useEffect(() => {
   }
 }, [isDesktopOrLaptop])
 
-console.log(sizeIcon);
 
   const functionIframe = () => {
     setLinkIframe(link);
@@ -49,13 +46,13 @@ console.log(sizeIcon);
             <GitHubIcon style={{fontSize:'26px', backgroundColor:'#111827', borderRadius:'10px', padding:'7px'}}/>
           </a> : null
       }
-      {cellphone?
+      {/* cellphone? */
         link ?
         <Button style={{width:'auto', margin:'0px', padding:'0px', background:'none', border:'none', justifyContent:'flex-start'}} onClick={()=>functionIframe()}>
           <DevicesIcon  id={styles.deviceIconBotonera} style={{fontSize:`${sizeIcon}`, backgroundColor:'#111827', borderRadius:'10px', padding:'7px'}}/>
         </Button>
         : null
-        : null
+        /* : null */
       }
         
     </div>

@@ -1,6 +1,3 @@
-/* #mobileProjects{
-    height: 100vh;
-} */
 
 #textProjects{
     background-color: #111827;
@@ -34,6 +31,19 @@
 #deviceIconBotonera{
     color: #ebff05;
     animation: none !important;
+    animation: touch 3s infinite !important;
+}
+
+@keyframes touch{
+    0%{
+        transform: scale(1.1);
+    }
+    50%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1.1);
+    }
 }
 
 #hrTitleProjects{
@@ -237,16 +247,36 @@
 
 @media (max-width: 450px) {
     #mobileProjects{
-        height: 100vh;
+        height: auto;
         background-color: #111827;
+    }
+    .containerProjects{
+        margin-top: -20%;
+        margin-bottom: -20%;
     }
     .desktop {
         display: none;
     }
     .celular{
-        display: none;
+        transform: scale(0.7);
+        overflow:visible;
+        margin-top: 0px;
     }
     .textCardCarousel{
         font-size:12px;
+    }
+    #titleProjects{
+        font-size: 35px;
+    }
+    
+    #iconTitleProjects{
+        font-size: 35px;
+        margin-right: 0;
+    }
+
+    #slickCarousel{
+        min-height: 380px;
+        min-width: 380px;
+        margin-top: 10%;
     }
 }
