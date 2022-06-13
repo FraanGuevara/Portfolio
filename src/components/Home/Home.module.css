@@ -5,6 +5,7 @@
 .homeContainer{
     margin: 0 auto;
     padding: 0;
+    width: 100%;
     height: 100vh;
     background-color: #111827;
     display: flex;

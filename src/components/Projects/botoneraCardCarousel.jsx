@@ -4,7 +4,7 @@ import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { Button } from '@mui/material';
 import { useMediaQuery } from 'react-responsive';
-
+import styles from './Projects.module.css';
 
 export default function BotoneraCardCarousel({link, repositorio, setLinkIframe}) {
 
@@ -52,7 +52,7 @@ console.log(sizeIcon);
       {cellphone?
         link ?
         <Button style={{width:'auto', margin:'0px', padding:'0px', background:'none', border:'none', justifyContent:'flex-start'}} onClick={()=>functionIframe()}>
-          <DevicesIcon style={{fontSize:`${sizeIcon}`, backgroundColor:'#111827', borderRadius:'10px', padding:'7px'}}/>
+          <DevicesIcon  id={styles.deviceIconBotonera} style={{fontSize:`${sizeIcon}`, backgroundColor:'#111827', borderRadius:'10px', padding:'7px'}}/>
         </Button>
         : null
         : null

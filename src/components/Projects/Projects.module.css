@@ -1,3 +1,7 @@
+/* #mobileProjects{
+    height: 100vh;
+} */
+
 #textProjects{
     background-color: #111827;
     color: white;
@@ -20,6 +24,18 @@
     animation: tronFilter 12s infinite;
 }
 
+#iconTitleProjects{
+    font-size: 70px;
+    margin: auto 5%;
+    color: #ebff05;
+    animation: none !important;
+}
+
+#deviceIconBotonera{
+    color: #ebff05;
+    animation: none !important;
+}
+
 #hrTitleProjects{
     width: 20%;
     border-color: #ebff05;
@@ -36,7 +52,7 @@
 }
 
 .desktop {
-    margin-top: 3%;
+    margin-top: 10%;
     width: 70%;
     display: flex;
     justify-content: center;
@@ -45,16 +61,19 @@
 
 .desktopIframe {
     position: absolute;
-    width: 710px;
-    height: 445px;
+    width: 1440px;
+    height: 900px;
+    transform: scale(0.5);
+    border: none;
 }
 
 .celular {
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
     width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
+    transform:scale(0.8);
 }
 
 .celularIframe {
