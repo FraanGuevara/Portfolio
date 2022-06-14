@@ -25,13 +25,16 @@ export default function TextSkills({ t }) {
   return (
     <>
       {loading ? <Loading/>:
-                <div className={styles.skillsTextEffect}>
+                <div style={{
+                  textAling: 'center',
+                }} id={styles.skillsTextEffect}>
                     <TypeWriterEffect
                         textStyle={{
                             fontFamily: 'Roboto Mono',
                             color: 'white',
                             fontWeight: 500,
                             fontSize: '1.5em',
+                            textAlign: 'center',
                         }}
                         multiTextLoop={false}
                         startDelay={1000}

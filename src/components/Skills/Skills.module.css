@@ -16,6 +16,7 @@
     color: white;
     background-color: #111827;
     text-shadow: 0 0 10px #ebff05;
+    margin-bottom: 0;
 }
 
 #hrTitleSkills{
@@ -61,19 +62,57 @@
     height: 100%;
 }
 
-.skillsTextEffect{
+#skillsTextEffect{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    text-align: center;
     padding: 15%;
 }
 
 
 
 
+@media (max-width: 1000px) {
+    
+    .skills{
+        flex-direction: column;
+    }
+    .iconCloud{
+        width: 100%;
+        padding: 0;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        align-items: center;
+    }
+    .iconCloudTitle{
+        font-size: 25px;
+    }
+
+    .skillsText{
+        width: 80%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #skillsTextEffect{
+        font-size: 15px !important;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        padding: 0;
+    }
+}
+
 @media (max-width: 450px) {
     #titleSkills{
         font-size: 35px;
+    }
+    .skillsText{
+        height: 400px;
+    }
+    #skillsTextEffect{
+        font-size: 13px !important;
     }
 }

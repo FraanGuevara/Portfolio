@@ -41,6 +41,7 @@ export default function Home({ t }) {
                             color: '#ebff05',
                             fontWeight: 500,
                             fontSize: '1.5em',
+                            textAlign: 'center',
                         }}
                         multiTextLoop={true}
                         startDelay={1000}
