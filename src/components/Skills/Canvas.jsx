@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import allIcons from 'simple-icons';
 import { v4 } from "uuid";
 import { IconCloud } from "react-icon-cloud";
 import styles from './Skills.module.css';
 
-const Canvas = () => {
+const Canvas = ({setTitleSkills}) => {
+
+    const handleClick = (e) => {
+        const { title } = e.target;
+        setTitleSkills(title);
+    }
+
     const tagCanvasOptions = {
         // activateAudio: string
         // activeCursor: string 
@@ -121,19 +127,24 @@ const Canvas = () => {
         simpleIcon: allIcons.Get(slug)
     }));
     return (
-        <div className={styles.containerCanva}>
-            <IconCloud
-                key={v4()}
-                id={"icon"}
-                minContrastRatio={1}
-                iconSize={50}
-                backgroundHexColor={"#fff"}
-                fallbackHexColor={"#000"}
-                tags={iconTags}
-                tagCanvasOptions={tagCanvasOptions}
-            />
-        </div>
+        <>
+            <div className={styles.containerCanva}>
+                <div onClick={(e) => handleClick(e)} >
+                    <IconCloud
+                        key={v4()}
+                        id={"icon"}
+                        minContrastRatio={1}
+                        iconSize={50}
+                        backgroundHexColor={"#fff"}
+                        fallbackHexColor={"#000"}
+                        tags={iconTags}
+                        tagCanvasOptions={tagCanvasOptions}
+                    />
+                </div>
+            </div>
+        </>
+
     );
 };
 
-export default Canvas;
+export default React.memo(Canvas);
