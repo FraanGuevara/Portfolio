@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import allIcons from 'simple-icons';
 import { v4 } from "uuid";
 import { IconCloud } from "react-icon-cloud";
@@ -29,7 +29,7 @@ const Canvas = ({setTitleSkills}) => {
         clickToFront: 500,
         // decel: number
         depth: 1,
-        // dragControl: boolean
+        dragControl: true,
         // dragThreshold: number
         // fadeIn: number
         // freezeActive: boolean
@@ -72,7 +72,7 @@ const Canvas = ({setTitleSkills}) => {
         // radiusY: number
         // radiusZ: number
         // repeatTagsTags: 0 - 64
-        reverse: true,
+        reverse: false,
         // scrollPause: boolean
         // shadow: string
         // shadowBlur: number
@@ -131,10 +131,12 @@ const Canvas = ({setTitleSkills}) => {
             <div className={styles.containerCanva}>
                 <div onClick={(e) => handleClick(e)} >
                     <IconCloud
+                        canvasWidth={500}
+                        canvasHeight={500}
                         key={v4()}
                         id={"icon"}
                         minContrastRatio={1}
-                        iconSize={50}
+                        iconSize={25}
                         backgroundHexColor={"#fff"}
                         fallbackHexColor={"#000"}
                         tags={iconTags}

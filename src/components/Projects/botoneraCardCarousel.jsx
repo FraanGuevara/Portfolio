@@ -36,14 +36,14 @@ useEffect(() => {
         link ?
           <a href={link} target='_blank'
           rel="noopener">
-            <OpenInNewIcon style={{fontSize:'26px', backgroundColor:'#111827', borderRadius:'10px', padding:'7px'}}/>
+            <OpenInNewIcon style={{fontSize:'26px', backgroundColor:'#111827', borderRadius:'10px', padding:'7px', fill:'none'}}/>
           </a> : null
       }
       {
         repositorio ?
           <a href={repositorio} target='_blank'
           rel="noopener">
-            <GitHubIcon style={{fontSize:'26px', backgroundColor:'#111827', borderRadius:'10px', padding:'7px'}}/>
+            <GitHubIcon style={{fontSize:'26px', backgroundColor:'#111827', borderRadius:'10px', padding:'7px', fill:'none'}}/>
           </a> : null
       }
       {/* cellphone? */

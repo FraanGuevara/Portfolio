@@ -1,4 +1,6 @@
-
+#mobileProjects{
+    margin-top: 10%;
+}
 #textProjects{
     background-color: #111827;
     color: white;
@@ -6,6 +8,7 @@
     align-items: flex-end;
     justify-content: center;
     height: 150px;
+    text-shadow: 0 0 10px #ebff05;
 }
 
 #titleProjects{
@@ -18,7 +21,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: tronFilter 12s infinite;
 }
 
 #iconTitleProjects{

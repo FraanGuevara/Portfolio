@@ -38,5 +38,10 @@
         "portfolioText":"Portfolio creado en React Js con implementación de otras tecnologias.",
         "githubTitle":"Portfolio",
         "githubText":"GitHub propio donde van a poder ver los proyectos finalizados y en los cuales estoy trabajando actualmente."
-    }
+    },
+    "skills":{
+        "skills":"Habilidades",
+        "skillsText":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nisi libero, saepe reprehenderit sunt facere tenetur animi, explicabo dolorum ad ea expedita inventore ipsum eius odit voluptate dicta veniam provident."
+
+}
     }
