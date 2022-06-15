@@ -121,6 +121,7 @@ const Canvas = ({setTitleSkills}) => {
         "figma",
         "bootstrap",
         "materialui",
+        "postman"
     ];
     const iconTags = iconSlugs.map((slug) => ({
         id: slug,

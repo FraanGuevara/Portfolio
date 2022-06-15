@@ -9,6 +9,19 @@
     margin: 0;
     padding: 0;
   }
+
+  body::-webkit-scrollbar{
+    width:9px;
+    background-color: #111827;
+  }
+
+  body::-webkit-scrollbar-thumb{
+    width:9px;
+    background: #ebff05;
+    border-radius: 10px;
+  }
+
+
 .swiper {
   background-color: #111827;
     width: 100%;

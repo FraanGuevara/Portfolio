@@ -6,6 +6,7 @@ import { useMediaQuery } from 'react-responsive';
 import { useState, useEffect } from "react";
 import BotoneraCardCarousel from './BotoneraCardCarousel';
 
+
 export default function Carrousel({ setLinkIframe, t }) {
 
     const [mobile, setMobile] = useState(3);

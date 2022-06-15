@@ -1,22 +1,18 @@
 .aboutMeContainer {
     width: 100%;
     height: 100vh;
-    background-image: url(../../img/fondoAboutMe.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     color: white;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    font-family: 'Kanit', sans-serif;
 }
 
 svg{
     fill: #000000;
     animation: tronFilter 12s infinite !important;
 }
-
 
 
 
@@ -143,7 +139,7 @@ svg{
 
 @media (max-width: 900px) {
     .aboutMeContainer {
-        font-family: 'Times New Roman', Times, serif;
+        font-family: 'Kanit', sans-serif;
         flex-direction: column;
         overflow: hidden;
     }
@@ -155,7 +151,7 @@ svg{
         flex-direction: column;
     }
     .AboutMeText__h1 {
-        margin-left: 5%;
+        margin-left: 7%;
         font-size: 35px;
     }
 

@@ -5,10 +5,11 @@ import computadora from '../../img/computadoraProyecto.webp';
 import celular from '../../img/celular2.png';
 import Carrousel from './Carrousel';
 import DevicesIcon from '@mui/icons-material/Devices';
+import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
 
 export default function Projects({ t }) {
 
-    const [linkIframe, setLinkIframe] = useState('');
+    const [linkIframe, setLinkIframe] = useState('https://auraflow.netlify.app');
 
     return (
         <>
@@ -26,10 +27,16 @@ export default function Projects({ t }) {
                         <iframe className={styles.celularIframe} src={linkIframe} loading="lazy" tabIndex="-1"></iframe>
                     </div>
                 </div>
+                <div>
+                    <div id={styles.touchIconDiv}>
+                <DoubleArrowIcon id={styles.scrollIcon}/>
+                    </div>
                 <Carrousel 
                 setLinkIframe={setLinkIframe}
                 t={t}
                 />
+
+                </div>
             </div>
 
         </>

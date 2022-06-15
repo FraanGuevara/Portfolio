@@ -1,12 +1,12 @@
 .containerSkills{
     background-color: #111827;
     margin-top: 15%;
-    height: 100vh;
+    height: auto
 }
 #titleSkills{
     width: 100%;
     min-height: 150px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Kanit', sans-serif;
     font-size: 75px;
     font-weight: 600;
     text-align: center;
@@ -15,13 +15,14 @@
     justify-content: center;
     color: white;
     background-color: #111827;
-    text-shadow: 0 0 10px #ebff05;
+    text-shadow: 0 0 50px #ebff05;
     margin-bottom: 0;
 }
 
 #hrTitleSkills{
     width: 20%;
     border-color: #ebff05;
+    box-shadow: #ebff05  0 0 15px ;
 }
 
 .skills{

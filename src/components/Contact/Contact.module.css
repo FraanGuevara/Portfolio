@@ -1,0 +1,118 @@
+.contact{
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    margin-top: 0px;
+}
+
+#titleContact{
+    width: 100%;
+    min-height: 150px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 75px;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #111827;
+    text-shadow: 0 0 50px #ebff05;
+    margin-bottom: 0;
+}
+
+#hrTitleContact{
+    width: 20%;
+    border-color: #ebff05;
+    box-shadow: #ebff05 0 0 15px;
+}
+
+.contact__container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+
+.contact__seccionLinks{
+    background-color: #111827;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* SECCION LINKS EN ICONOS */
+
+.contact__seccionLinks_iconos{
+    display: flex;
+    height: 80%;
+    width: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+/* CARD */
+.card{
+width: 300px;
+height: 300px;
+/* background-color: #03055e ; */
+border: 2px solid #ebff05;
+box-shadow: #ebff05 0 0 20px;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+filter: none;
+margin: auto;
+border-radius: 20px;
+}
+
+
+.card__icono{
+    display: flex;
+    justify-content:center ;
+    
+}
+
+#card__icono_png{
+    font-size: 130px ;
+    animation: none !important;
+    color: rgb(0 255 255 / 50%)
+}
+
+.card__texto{
+    height: auto;
+}
+
+.card__texto_txt{
+    text-align: center;
+    color: white;
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+@media (max-width: 1000px) {
+    .contact__container{
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    }
+    .contact__seccionLinks_iconos{
+        display: grid;
+        height: 100%;
+        grid-template-columns: repeat(auto-fit,
+                minmax(320px, 0.1fr));
+        gap: 16px;
+    }
+
+    
+}
+
+@media (max-width: 450px) {
+    #titleContact{
+        font-size: 35px;
+    }
+}

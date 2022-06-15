@@ -36,7 +36,7 @@
         "colorGameText":"juego que se basa en adivinar el color que se describe en el titulo en forma de rgb, clickeando cada uno de los cuadrados.Tiene la funcionalidad de cambiar el nivel de dificultad con los botones EASY / STANDAR / HARD.",
         "portfolioTitle":"Portfolio",
         "portfolioText":"Portfolio creado en React Js con implementación de otras tecnologias.",
-        "githubTitle":"Portfolio",
+        "githubTitle":"Github",
         "githubText":"GitHub propio donde van a poder ver los proyectos finalizados y en los cuales estoy trabajando actualmente."
     },
     "skills":{

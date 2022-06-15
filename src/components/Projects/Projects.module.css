@@ -8,12 +8,12 @@
     align-items: flex-end;
     justify-content: center;
     height: 150px;
-    text-shadow: 0 0 10px #ebff05;
+    text-shadow: 0 0 50px #ebff05;
 }
 
 #titleProjects{
     width: 100%;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Kanit', sans-serif;
     font-size: 75px;
     font-weight: 600;
     margin: 0 auto;
@@ -51,6 +51,7 @@
 #hrTitleProjects{
     width: 20%;
     border-color: #ebff05;
+    box-shadow: #ebff05  0 0 15px ;
 }
 
 
@@ -98,7 +99,33 @@
 .celularImg {
     width: 450px;
 }
+
 /* CARROUSEL DE PROYECTOS */
+
+#touchIconDiv{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#scrollIcon{
+    font-size: 50px;
+    color: #ebff05;
+    animation: none !important;
+    margin-right: 20px;
+    animation: scrollCarousel 3s infinite !important;
+}
+
+@keyframes scrollCarousel{
+    0%{
+        transform: translateX(15px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(15px);
+    }
+}
 
 #slickCarousel{
     min-height: 380px;
@@ -216,7 +243,6 @@
         justify-content: center;
     }
 
-
 }
 
 @media (max-width: 1000px) {
@@ -243,7 +269,6 @@
         width: 375px;
         height: 635px;
     }
-
 
 }
 
