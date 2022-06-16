@@ -94,7 +94,7 @@ export default function Contact({ t }) {
         <>
             <h2 id={styles.titleContact}>
                 <motion.hr animate={animationHr} id={styles.hrTitleContact} />
-                {t("skills.skills")} 
+                {t("contact.contact")} 
                 <motion.hr animate={animationHr2} id={styles.hrTitleContact} /></h2>
             <div ref={ref} className={styles.contact}>
                 <div className={styles.contact__container}>
@@ -103,25 +103,25 @@ export default function Contact({ t }) {
                             <CardContacto
                                 Icono={ListAltIcon}
                                 link={"Linkedin"}
-                                t={t}
+                                t={t("contact.contactForm")}
                                 animacion = {animationCard1}
                             />
                             <CardContacto
                                 Icono={WhatsAppIcon}
                                 link={"whatsapp"}
-                                t={t}
+                                t={t("contact.contactWsp")}
                                 animacion = {animationCard2}
                             />
                             <CardContacto
                                 Icono={CalendarMonthIcon}
                                 link={"Calendby"}
-                                t={t}
+                                t={t("contact.contactCalendby")}
                                 animacion = {animationCard3}
                             />
                             <CardContacto
                                 Icono={LinkedInIcon}
                                 link={"Linkedin"}
-                                t={t}
+                                t={t("contact.contactLinkedin")}
                                 animacion = {animationCard4}
                             />
                         </div>

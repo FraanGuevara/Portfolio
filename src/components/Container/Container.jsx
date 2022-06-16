@@ -17,7 +17,7 @@ export default function Container({ t }) {
       <div id={styles.container}>
       <NavbarOrDrawer t={t} />
       <Home t={t} />
-      <AboutMe t={t} />
+      <AboutMe t={t} id='hrefAboutMe'/>
       <Projects t={t} />
       <Skills t={t}/>
       <Contact t={t}/>

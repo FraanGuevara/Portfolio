@@ -152,6 +152,11 @@ export default function PersistentDrawerLeft({ props, t }) {
                     <List id={styles.navbarFondoDrawer} sx={{ height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'end' }}>
                         {['Git-hub', 'Linkedin', 'Gmail'].map((text, index) => (
                             <ListItem key={text} disablePadding>
+                                <a 
+                                style={{textDecoration:'none'}} 
+                                href={index === 0 ? 'https://github.com/FraanGuevara' :
+                                            index === 1 ? 'https://www.linkedin.com/in/fraanguevara/' :
+                                                'mailto:francoguevara.dev@gmail.com'}>
                                 <ListItemButton id={styles.navbarBotonesTexto}>
                                     <ListItemIcon id={styles.navbarBotonesRedes}>
                                         {index === 0 ? <GitHubIcon /> :
@@ -160,6 +165,8 @@ export default function PersistentDrawerLeft({ props, t }) {
                                     </ListItemIcon>
                                     <ListItemText primary={text} />
                                 </ListItemButton>
+                                </a>
+
                             </ListItem>
                         ))}
                     </List>

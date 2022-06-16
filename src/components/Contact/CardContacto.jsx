@@ -20,7 +20,7 @@ export default function CardContacto({Icono, link, t, animacion}) {
             </div>
             <div className={styles.card__texto}>
             <p className={styles.card__texto_txt}>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro nesciunt animi enim iusto nemo repudiandae obcaecati minima aliquid illo sed, ea non quia dolorum necessitatibus ratione esse mollitia saepe eius!
+                {t}
             </p>
             </div>
         </div>
