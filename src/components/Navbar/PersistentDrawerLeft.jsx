@@ -135,6 +135,7 @@ export default function PersistentDrawerLeft({ props, t }) {
                     <List id={styles.navbarFondoDrawer}>
                         {[t("navbar.aboutMe"), t("navbar.experience"), t("navbar.projects"), t("navbar.contact")].map((text, index) => (
                             <ListItem key={text} disablePadding>
+                                
                                 <ListItemButton id={styles.navbarBotonesTexto}>
                                     <ListItemIcon id={styles.navbarBotones}>
                                         {index === 0 ? <PersonPinIcon /> :

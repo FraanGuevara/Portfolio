@@ -32,7 +32,7 @@ export default function AboutMe({ t }) {
 
     return (
         <>
-            <div
+            <div id='hrefAboutMe'
                 className={styles.aboutMeContainer}>
                 <motion.div
                     animate={animation}
