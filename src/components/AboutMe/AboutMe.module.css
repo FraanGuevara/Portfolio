@@ -96,7 +96,9 @@ svg{
     font-weight: 400;
     transition: ease-in-out 1s ;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     transform: scale(0.5);
     font-family: 'Roboto Mono', monospace;
 }
@@ -111,6 +113,16 @@ svg{
     transform: scale(0.9);
     transition: ease-in-out 1s ;
 }
+
+#botonCv{
+    border: none;
+    background-color: #1d85bb;
+    color: #111827;
+    height: 50px;
+    width: 200px;
+    border-radius: 15px;
+}
+
 
 #touchIcon{
     position:absolute;
@@ -156,12 +168,13 @@ svg{
     }
 
     .AboutMeText__p:hover{
-        height: 300px;
-        width: 300px;
+        height: 320px;
+        width: 320px;
         display: flex;
         align-items: center;
         background-color: rgb(0, 0, 0,);
         font-size: 13px;
+        overflow: hidden;
     }
 
     #touchIcon{

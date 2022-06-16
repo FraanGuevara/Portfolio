@@ -177,7 +177,7 @@ export default function Carrousel({ setLinkIframe, t }) {
                         <div id={styles.iconosCardCarousel}>
                             <BotoneraCardCarousel
                                 link={links[0].portfolio}
-                                repositorio={repositorios[0].portfolio}
+                                /* repositorio={repositorios[0].portfolio} */
                                 setLinkIframe={setLinkIframe}
                             />
                         </div>

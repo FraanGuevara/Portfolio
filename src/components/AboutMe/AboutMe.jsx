@@ -29,6 +29,7 @@ export default function AboutMe({ t }) {
         }
     }, [inView]);
 
+
     return (
         <>
             <div
@@ -37,10 +38,11 @@ export default function AboutMe({ t }) {
                     animate={animation}
                     id={styles.AboutMeText} className={styles.tronFilter}>
                     <div style={{ backgroundColor: 'rgba(0, 0, 0, 0)', padding: '25%', borderRadius: '50%', display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
-                        <h1
-                            ref={ref}
-                            className={styles.AboutMeText__h1}>{t("aboutMe.about")}</h1>
-                        <p className={styles.AboutMeText__p}>{t("aboutMe.text")}
+                        <h1 ref={ref} className={styles.AboutMeText__h1}>
+                            {t("aboutMe.about")}
+                        </h1>
+                        <p className={styles.AboutMeText__p}>
+                            {t("aboutMe.text")}
                         </p>
                     </div>
                 </motion.div>

@@ -16,7 +16,7 @@
     align-items: center;
     justify-content: center;
     color: white;
-    background-color: #111827;
+    background-color: rgb(17, 24, 39);
     text-shadow: 0 0 50px #ebff05;
     margin-bottom: 0;
 }
@@ -69,6 +69,7 @@ width: 300px;
 height: 300px;
 border: 2px solid #ebff05;
 box-shadow: #ebff05 0 0 20px;
+background-color: #111827;
 overflow: hidden;
 display: flex;
 flex-direction: column;
@@ -86,7 +87,7 @@ border-radius: 20px;
 #card__icono_png{
     font-size: 130px ;
     animation: none !important;
-    color: rgb(0 255 255 / 50%)
+    color: #2e89ff
 }
 
 .card__texto{

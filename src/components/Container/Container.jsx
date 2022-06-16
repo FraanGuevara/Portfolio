@@ -6,6 +6,7 @@ import NavbarOrDrawer from '../Navbar/NavbarOrDrawer';
 import Projects from '../Projects/Projects';
 import Skills from '../Skills/Skills';
 import Contact from '../Contact/Contact';
+import Footer from '../Footer/Footer';
 
 
 
@@ -20,6 +21,7 @@ export default function Container({ t }) {
       <Projects t={t} />
       <Skills t={t}/>
       <Contact t={t}/>
+      <Footer t={t} />
       </div>
       
     </>
