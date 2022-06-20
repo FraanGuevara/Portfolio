@@ -26,9 +26,9 @@ export default function Home({ t }) {
 
     return (
         <>
-
             {loading ? <Loading /> :
                 <motion.div
+                    id='hrefHome'
                     className={styles.homeContainer}>
                     <motion.h3
                     animate={{ y: [500, 0] }}

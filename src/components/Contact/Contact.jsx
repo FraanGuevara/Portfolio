@@ -92,6 +92,9 @@ export default function Contact({ t }) {
 
     return (
         <>
+        <div
+        id='hrefContact'
+        >
             <h2 id={styles.titleContact}>
                 <motion.hr animate={animationHr} id={styles.hrTitleContact} />
                 {t("contact.contact")} 
@@ -128,6 +131,7 @@ export default function Contact({ t }) {
                     </div>
                 </div>
             </div>
+        </div>
         </>
     )
 }

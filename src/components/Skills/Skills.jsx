@@ -47,7 +47,9 @@ useEffect(() => {
 
   return (
     <>
-      <div className={styles.containerSkills}>
+      <div 
+      id='hrefSkills'
+      className={styles.containerSkills}>
         <h2 ref={ref} id={styles.titleSkills}>
           <motion.hr animate={animationHr} id={styles.hrTitleSkills} />
           {t("skills.skills")} 

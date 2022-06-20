@@ -27,6 +27,7 @@ import { createTheme } from '@mui/material/styles';
 import styles from './styles.module.css';
 import SwitchLanguage from './SwitchLanguage';
 import logo from '../../img/LogoFG.png'
+import { Link } from 'react-scroll';
 
 let theme = createTheme({
     palette: {
@@ -103,7 +104,9 @@ export default function PersistentDrawerLeft({ props, t }) {
                         </IconButton>
                         <Typography variant="h6" noWrap component="div"
                             sx={{ width: '100%', display: 'flex', justifyContent: 'right' }}>
-                            <img src={logo} alt="Logo FG" style={{ width: '70px', margin: '10px 0' }} />
+                            <Link to="hrefHome" spy={true} smooth={true} duration={500}>
+                                <img src={logo} alt="Logo FG" style={{ width: '70px', margin: '10px 0' }} />
+                            </Link>
                         </Typography>
                     </Toolbar>
                 </AppBar>
@@ -123,9 +126,9 @@ export default function PersistentDrawerLeft({ props, t }) {
                 >
 
                     <DrawerHeader id={styles.navbarFondoDrawer} >
-                    <div id={styles.navbarFondoDrawer} style={{ display: 'flex', justifyContent: 'flex-end' }}>
-                        <SwitchLanguage />
-                    </div>
+                        <div id={styles.navbarFondoDrawer} style={{ display: 'flex', justifyContent: 'flex-end' }}>
+                            <SwitchLanguage />
+                        </div>
                         <IconButton id={styles.navbarBotones} onClick={handleDrawerClose}>
                             {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
                         </IconButton>
@@ -134,18 +137,22 @@ export default function PersistentDrawerLeft({ props, t }) {
                     {/* TEXTO E ICONOS DE ARRIBA */}
                     <List id={styles.navbarFondoDrawer}>
                         {[t("navbar.aboutMe"), t("navbar.experience"), t("navbar.projects"), t("navbar.contact")].map((text, index) => (
-                            <ListItem key={text} disablePadding>
-                                
-                                <ListItemButton id={styles.navbarBotonesTexto}>
-                                    <ListItemIcon id={styles.navbarBotones}>
-                                        {index === 0 ? <PersonPinIcon /> :
-                                            index === 1 ? <WorkIcon /> :
-                                                index === 2 ? <CodeIcon /> :
-                                                    <MailIcon />}
-                                    </ListItemIcon>
-                                    <ListItemText primary={text} />
-                                </ListItemButton>
-                            </ListItem>
+                            <Link to={index === 0 ? 'hrefAboutMe' :
+                                index === 1 ? 'hrefProjects' :
+                                    index === 2 ? 'hrefSkills' :
+                                        'hrefContact'} spy={true} smooth={true} offset={0} duration={500}>
+                                <ListItem key={text} disablePadding>
+                                    <ListItemButton id={styles.navbarBotonesTexto}>
+                                        <ListItemIcon id={styles.navbarBotones}>
+                                            {index === 0 ? <PersonPinIcon /> :
+                                                index === 1 ? <WorkIcon /> :
+                                                    index === 2 ? <CodeIcon /> :
+                                                        <MailIcon />}
+                                        </ListItemIcon>
+                                        <ListItemText primary={text} />
+                                    </ListItemButton>
+                                </ListItem>
+                            </Link>
                         ))}
                     </List>
 
@@ -153,25 +160,25 @@ export default function PersistentDrawerLeft({ props, t }) {
                     <List id={styles.navbarFondoDrawer} sx={{ height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'end' }}>
                         {['Git-hub', 'Linkedin', 'Gmail'].map((text, index) => (
                             <ListItem key={text} disablePadding>
-                                <a 
-                                style={{textDecoration:'none'}} 
-                                href={index === 0 ? 'https://github.com/FraanGuevara' :
-                                            index === 1 ? 'https://www.linkedin.com/in/fraanguevara/' :
-                                                'mailto:francoguevara.dev@gmail.com'}>
-                                <ListItemButton id={styles.navbarBotonesTexto}>
-                                    <ListItemIcon id={styles.navbarBotonesRedes}>
-                                        {index === 0 ? <GitHubIcon /> :
-                                            index === 1 ? <LinkedInIcon /> :
-                                                <AlternateEmailIcon />}
-                                    </ListItemIcon>
-                                    <ListItemText primary={text} />
-                                </ListItemButton>
+                                <a
+                                    style={{ textDecoration: 'none' }}
+                                    href={index === 0 ? 'https://github.com/FraanGuevara' :
+                                        index === 1 ? 'https://www.linkedin.com/in/fraanguevara/' :
+                                            'mailto:francoguevara.dev@gmail.com'}>
+                                    <ListItemButton id={styles.navbarBotonesTexto}>
+                                        <ListItemIcon id={styles.navbarBotonesRedes}>
+                                            {index === 0 ? <GitHubIcon /> :
+                                                index === 1 ? <LinkedInIcon /> :
+                                                    <AlternateEmailIcon />}
+                                        </ListItemIcon>
+                                        <ListItemText primary={text} />
+                                    </ListItemButton>
                                 </a>
 
                             </ListItem>
                         ))}
                     </List>
-                    
+
                 </Drawer>
             </Box>
         </HideOnScroll>

@@ -1,4 +1,4 @@
-#mobileProjects{
+.mobileProjects{
     margin-top: 10%;
 }
 #textProjects{
@@ -273,7 +273,7 @@
 }
 
 @media (max-width: 450px) {
-    #mobileProjects{
+    .mobileProjects{
         height: auto;
         background-color: #111827;
     }

@@ -52,7 +52,8 @@ export default function Projects({ t }) {
     return (
         <>
             <div 
-            id={styles.mobileProjects}>
+            id='hrefProjects'
+            className={styles.mobileProjects}>
                 <div id={styles.textProjects}>
                     <h2
                     ref={ref}

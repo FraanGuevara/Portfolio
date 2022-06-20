@@ -92,7 +92,7 @@ svg{
     position: absolute;
     height: 150px;
     width: 60%;
-    font-size: 0.1px;
+    font-size: 0px;
     font-weight: 400;
     transition: ease-in-out 1s ;
     display: flex;
