@@ -42,7 +42,6 @@ useEffect(() => {
             transition: { ease: "easeOut", duration: 0 }
         })
     }
-    console.log(inView)
 }, [inView]);
 
   return (

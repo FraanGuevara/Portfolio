@@ -46,7 +46,6 @@ export default function Projects({ t }) {
                 transition: { ease: "easeOut", duration: 0 }
             })
         }
-        console.log(inView)
     }, [inView]);
 
     return (

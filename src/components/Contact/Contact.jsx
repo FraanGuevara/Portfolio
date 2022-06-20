@@ -87,7 +87,6 @@ export default function Contact({ t }) {
                 transition: { ease: "easeOut", duration: 0 }
             })
         }
-        console.log(inView)
     }, [inView]);
 
     return (
