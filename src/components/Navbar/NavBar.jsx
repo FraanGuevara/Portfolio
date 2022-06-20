@@ -6,7 +6,7 @@ import PersonPinIcon from '@mui/icons-material/PersonPin';
 import WorkIcon from '@mui/icons-material/Work';
 import CodeIcon from '@mui/icons-material/Code';
 import HideOnScroll from './HideOnScroll';
-import styles from './styles.module.css';
+import styles from './Navbar.module.css';
 import SwitchLanguage from './SwitchLanguage';
 import logo from '../../img/LogoFG.png'
 import { Link } from 'react-scroll';

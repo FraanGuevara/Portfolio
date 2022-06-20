@@ -105,25 +105,25 @@ export default function Contact({ t }) {
                         <div className={styles.contact__seccionLinks_iconos}>
                             <CardContacto
                                 Icono={ListAltIcon}
-                                link={"Linkedin"}
+                                link={"https://docs.google.com/forms/d/e/1FAIpQLSdWaBSVYlzgfres2lQlbC9Ut7UEyDJpjZ1EypTTFKoi428tsg/viewform?usp=sf_link"}
                                 t={t("contact.contactForm")}
                                 animacion = {animationCard1}
                             />
                             <CardContacto
                                 Icono={WhatsAppIcon}
-                                link={"whatsapp"}
+                                link={"https://walink.co/7fd635"}
                                 t={t("contact.contactWsp")}
                                 animacion = {animationCard2}
                             />
                             <CardContacto
                                 Icono={CalendarMonthIcon}
-                                link={"Calendby"}
+                                link={"https://calendly.com/francoguevara-dev/30min?month=2022-06"}
                                 t={t("contact.contactCalendby")}
                                 animacion = {animationCard3}
                             />
                             <CardContacto
                                 Icono={LinkedInIcon}
-                                link={"Linkedin"}
+                                link={"https://www.linkedin.com/in/fraanguevara/"}
                                 t={t("contact.contactLinkedin")}
                                 animacion = {animationCard4}
                             />

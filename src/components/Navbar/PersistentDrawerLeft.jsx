@@ -24,7 +24,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import HideOnScroll from './HideOnScroll';
 import { createTheme } from '@mui/material/styles';
-import styles from './styles.module.css';
+import styles from './Navbar.module.css';
 import SwitchLanguage from './SwitchLanguage';
 import logo from '../../img/LogoFG.png'
 import { Link } from 'react-scroll';
