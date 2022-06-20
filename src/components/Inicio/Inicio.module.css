@@ -24,7 +24,7 @@ video{
     display: grid;
     justify-content: center;
     align-items: flex-end;
-    height: 95vh;
+    height: 100vh;
 }
 
 #botonInicio{
@@ -35,4 +35,8 @@ video{
 #botonInicio:hover{
     color:white;
     background-color:rgba(234, 255, 5, 0.300);
+}
+
+.copy{
+    font-family: 'Roboto Mono', sans-serif;
 }

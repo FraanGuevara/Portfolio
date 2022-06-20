@@ -49,5 +49,8 @@
         "contactWsp":"Here I leave my contact on WhatsApp to answer any questions you want to ask me.",
         "contactCalendby":"If you liked my profile and want to arrange a talk/interview you can request it in my Calendby.",
         "contactLinkedin":"You can follow me on Linkedin to see the projects I'm working on!"
+    },
+    "download":{
+        "download":"../../CV Franco Guevara english.pdf"
     }
 }

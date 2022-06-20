@@ -6,6 +6,7 @@ import Inicio from './components/Inicio/Inicio';
 import { useTranslation } from 'react-i18next';
 import Home from './components/Home/Home';
 import Container from './components/Container/Container';
+import NotFound from './components/NotFound/NotFound';
 
 function App() {
 
@@ -20,7 +21,7 @@ function App() {
         <Route path="/" element={<Inicio t={t} />} />
         <Route path='/' element={<ButtonInicio/>}/>
         <Route exact path='/portfolio' element={<Container t={t} />}/>
-        <Route path='*' element={<h1>Not found</h1>}/>
+        <Route path='*' element={<NotFound/>}/>
       </Routes>
     </BrowserRouter>
     </>
