@@ -10,7 +10,7 @@ console.log(t("footer.title"));
             <div className={styles.footer}>
                 <div className={styles.footer__contenido}>
                     <p>francoguevara.dev@gmail.com</p>
-                    <a href={t("download.download")} download="CV Franco Guevara.pdf">
+                    <a href={t("download.download")} target="_blank">
                         <button className={styles.footer__contenido_btn}>DONWLOAD CV</button>
                     </a>
                 </div>
