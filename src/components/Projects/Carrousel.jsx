@@ -32,7 +32,7 @@ export default function Carrousel({ setLinkIframe, t }) {
             mimi: 'https://www.mimipasteleria.com.ar',
             pilates: 'https://ar-pilates.netlify.app/index.html',
             colorGame: 'https://fraanguevara.github.io/ColorGame-JS/',
-            portfolio: 'https://portfolio-fg.netlify.app/',
+            portfolio: 'www.francoguevara.com.ar',
             gitHub: 'https://github.com/FraanGuevara'
         }
     ];
