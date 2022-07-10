@@ -5,6 +5,7 @@ import styles from './Projects.module.css';
 import { useMediaQuery } from 'react-responsive';
 import { useState, useEffect } from "react";
 import BotoneraCardCarousel from './BotoneraCardCarousel';
+import ProjectCarrousel from './ProjectCarrousel';
 
 
 export default function Carrousel({ setLinkIframe, t }) {
@@ -68,143 +69,77 @@ export default function Carrousel({ setLinkIframe, t }) {
                 className="mySwiper"
             >
                 <SwiperSlide id={styles.slickCarousel} className={styles.slickCarouselAuraflow}>
-                    <div className={styles.capa}>
-                        <div id={styles.iconosCardCarousel}>
-                            <BotoneraCardCarousel
-                                link={links[0].auraflow}
-                                repositorio={repositorios[0].auraflow}
-                                setLinkIframe={setLinkIframe}
-                            />
-                        </div>
-                        <div>
-                            <p className={styles.titleCardCarousel}>{t("projects.auraflowTitle")}</p>
-                            <p className={styles.textCardCarousel}>
-                            {t("projects.auraflowText")}
-                            </p>
-                        </div>
-                    </div>
+                    <ProjectCarrousel
+                        link={links[0].auraflow}
+                        repositorio={repositorios[0].auraflow}
+                        setLinkIframe={setLinkIframe}
+                        tTitle={t("projects.auraflowTitle")}
+                        tText={t("projects.auraflowText")}
+                    />
                 </SwiperSlide>
                 <SwiperSlide id={styles.slickCarousel} className={styles.slickCarouselSapphire}>
-                    <div className={styles.capa}>
-                        <div id={styles.iconosCardCarousel}>
-                            <BotoneraCardCarousel
-                                link={links[0].sapphire}
-                                repositorio={repositorios[0].sapphire}
-                                setLinkIframe={setLinkIframe}
-                            />
-                        </div>
-                        <div>
-                            <p className={styles.titleCardCarousel}>{t("projects.sapphireTitle")}</p>
-                            <p className={styles.textCardCarousel}>
-                            {t("projects.sapphireText")}
-                            </p>
-                        </div>
-                    </div>
+                    <ProjectCarrousel
+                        link={links[0].sapphire}
+                        repositorio={repositorios[0].sapphire}
+                        setLinkIframe={setLinkIframe}
+                        tTitle={t("projects.sapphireTitle")}
+                        tText={t("projects.sapphireText")}
+                    />
                 </SwiperSlide>
+
                 <SwiperSlide id={styles.slickCarousel} className={styles.slickCarouselMimi}>
-                    <div className={styles.capa}>
-                        <div id={styles.iconosCardCarousel}>
-                            <BotoneraCardCarousel
-                                link={links[0].mimi}
-                                repositorio={repositorios[0].mimi}
-                                setLinkIframe={setLinkIframe}
-                            />
-                        </div>
-                        <div>
-                            <p className={styles.titleCardCarousel}>{t("projects.mimiTitle")}</p>
-                            <p className={styles.textCardCarousel}>
-                            {t("projects.mimiText")}
-                            </p>
-                        </div>
-                    </div>
+                    <ProjectCarrousel
+                        link={links[0].mimi}
+                        repositorio={repositorios[0].mimi}
+                        setLinkIframe={setLinkIframe}
+                        tTitle={t("projects.mimiTitle")}
+                        tText={t("projects.mimiText")}
+                    />
                 </SwiperSlide>
                 <SwiperSlide id={styles.slickCarousel} className={styles.slickCarouselPilates}>
-                    <div className={styles.capa}>
-                        <div id={styles.iconosCardCarousel}>
-                            <BotoneraCardCarousel
-                                link={links[0].pilates}
-                                repositorio={repositorios[0].pilates}
-                                setLinkIframe={setLinkIframe}
-                            />
-                        </div>
-                        <div>
-                            <p className={styles.titleCardCarousel}>{t("projects.pilatesTitle")}</p>
-                            <p className={styles.textCardCarousel}>
-                            {t("projects.pilatesText")}
-                            </p>
-                        </div>
-                    </div>
+                    <ProjectCarrousel
+                        link={links[0].pilates}
+                        repositorio={repositorios[0].pilates}
+                        setLinkIframe={setLinkIframe}
+                        tTitle={t("projects.pilatesTitle")}
+                        tText={t("projects.pilatesText")}
+                    />
                 </SwiperSlide>
                 <SwiperSlide id={styles.slickCarousel} className={styles.slickCarouselRosario}>
-                    <div className={styles.capa}>
-                        <div id={styles.iconosCardCarousel}>
-                            <BotoneraCardCarousel
-                                link={links[0].rosarioJobs}
-                                repositorio={repositorios[0].rosarioJobs}
-                                setLinkIframe={setLinkIframe}
-                            />
-                        </div>
-                        <div>
-                            <p className={styles.titleCardCarousel}>{t("projects.rosarioJobsTitle")}</p>
-                            <p className={styles.textCardCarousel}>
-                            {t("projects.rosarioJobsText")}
-                                </p>
-                                <p className={styles.textCardCarousel}>
-                                {t("projects.rosarioJobsText2")}
-                            </p>
-                        </div>
-                    </div>
+                    <ProjectCarrousel
+                        link={links[0].rosarioJobs}
+                        repositorio={repositorios[0].rosarioJobs}
+                        setLinkIframe={setLinkIframe}
+                        tTitle={t("projects.rosarioJobsTitle")}
+                        tText={t("projects.rosarioJobsText2")}
+                    />
                 </SwiperSlide>
                 <SwiperSlide id={styles.slickCarousel} className={styles.slickCarouselColor}>
-                    <div className={styles.capa}>
-                        <div id={styles.iconosCardCarousel}>
-                            <BotoneraCardCarousel
-                                link={links[0].colorGame}
-                                repositorio={repositorios[0].colorGame}
-                                setLinkIframe={setLinkIframe}
-                            />
-                        </div>
-                        <div>
-                            <p className={styles.titleCardCarousel}>{t("projects.colorGameTitle")}</p>
-                            <p className={styles.textCardCarousel}>
-                            {t("projects.colorGameText")}
-                            </p>
-                        </div>
-                    </div>
+                    <ProjectCarrousel
+                        link={links[0].colorGame}
+                        repositorio={repositorios[0].colorGame}
+                        setLinkIframe={setLinkIframe}
+                        tTitle={t("projects.colorGameTitle")}
+                        tText={t("projects.colorGameText")}
+                    />
                 </SwiperSlide>
                 <SwiperSlide id={styles.slickCarousel} className={styles.slickCarouselPortfolio}>
-                    <div className={styles.capa}>
-                        <div id={styles.iconosCardCarousel}>
-                            <BotoneraCardCarousel
-                                link={links[0].portfolio}
-                                /* repositorio={repositorios[0].portfolio} */
-                                setLinkIframe={setLinkIframe}
-                            />
-                        </div>
-                        <div>
-                            <p className={styles.titleCardCarousel}>{t("projects.portfolioTitle")}</p>
-                            <p className={styles.textCardCarousel}>
-                            {t("projects.portfolioText")}
-                            </p>
-                        </div>
-                    </div>
+                    <ProjectCarrousel
+                        link={links[0].portfolio}
+                        repositorio={repositorios[0].portfolio}
+                        setLinkIframe={setLinkIframe}
+                        tTitle={t("projects.portfolioTitle")}
+                        tText={t("projects.portfolioText")}
+                    />
                 </SwiperSlide>
                 <SwiperSlide id={styles.slickCarousel} className={styles.slickCarouselGithub}>
-                    <div className={styles.capa}>
-                        <div id={styles.iconosCardCarousel}>
-                            <BotoneraCardCarousel
-                                link={links[0].gitHub}
-                                repositorio={repositorios[0].gitHub}
-                                setLinkIframe={setLinkIframe}
-                            />
-                        </div>
-                        <div>
-                            <p className={styles.titleCardCarousel}>{t("projects.githubTitle")}</p>
-                            <p className={styles.textCardCarousel}>
-                            {t("projects.githubText")}
-                            </p>
-                        </div>
-                    </div>
+                    <ProjectCarrousel
+                        link={links[0].gitHub}
+                        repositorio={repositorios[0].gitHub}
+                        setLinkIframe={setLinkIframe}
+                        tTitle={t("projects.githubTitle")}
+                        tText={t("projects.githubText")}
+                    />
                 </SwiperSlide>
             </Swiper>
         </>
