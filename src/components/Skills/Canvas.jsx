@@ -108,20 +108,20 @@ const Canvas = ({setTitleSkills}) => {
     const iconSlugs = [
         "javascript",
         "react",
+        "redux",
+        "typescript",
         "html5",
         "css3",
-        "nodedotjs",
-        "express",
         "firebase",
         "git",
-        "sass",
-        "gitkraken",
         "github",
         "visualstudiocode",
         "figma",
-        "bootstrap",
         "materialui",
-        "postman"
+        "postman",
+        "java",
+        "spring",
+        "mysql"
     ];
     const iconTags = iconSlugs.map((slug) => ({
         id: slug,

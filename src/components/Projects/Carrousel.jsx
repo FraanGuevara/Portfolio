@@ -4,7 +4,6 @@ import { FreeMode, Pagination, Navigation } from "swiper";
 import styles from './Projects.module.css';
 import { useMediaQuery } from 'react-responsive';
 import { useState, useEffect } from "react";
-import BotoneraCardCarousel from './BotoneraCardCarousel';
 import ProjectCarrousel from './ProjectCarrousel';
 
 
