@@ -52,7 +52,7 @@ export default function FormEmail({t}) {
                         }}
                         onSubmit={ async ( { resetForm }) => {
                             let responseForm = await sendMessageForm(formPort.current);
-                            if(responseForm === 200){
+                            if(responseForm.status === 200){
                                 setFormSend(true);
                             }else{
                                 setErrorSend(true)
