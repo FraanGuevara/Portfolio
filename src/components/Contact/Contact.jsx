@@ -8,6 +8,7 @@ import ListAltIcon from '@mui/icons-material/ListAlt';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useAnimation } from 'framer-motion';
+import FormEmail from './FormEmail';
 
 
 export default function Contact({ t }) {
@@ -101,25 +102,28 @@ export default function Contact({ t }) {
             <div ref={ref} className={styles.contact}>
                 <div className={styles.contact__container}>
                     <div className={styles.contact__seccionLinks} >
+                            <FormEmail
+                            t={t}
+                            />
                         <div className={styles.contact__seccionLinks_iconos}>
-                            <CardContacto
+                            {/* <CardContacto
                                 Icono={ListAltIcon}
                                 link={"https://docs.google.com/forms/d/e/1FAIpQLSdWaBSVYlzgfres2lQlbC9Ut7UEyDJpjZ1EypTTFKoi428tsg/viewform?usp=sf_link"}
                                 t={t("contact.contactForm")}
                                 animacion = {animationCard1}
-                            />
+                            /> */}
                             <CardContacto
                                 Icono={WhatsAppIcon}
                                 link={"https://walink.co/7fd635"}
                                 t={t("contact.contactWsp")}
                                 animacion = {animationCard2}
                             />
-                            <CardContacto
+                            {/* <CardContacto
                                 Icono={CalendarMonthIcon}
                                 link={"https://calendly.com/francoguevara-dev/30min?month=2022-06"}
                                 t={t("contact.contactCalendby")}
                                 animacion = {animationCard3}
-                            />
+                            /> */}
                             <CardContacto
                                 Icono={LinkedInIcon}
                                 link={"https://www.linkedin.com/in/fraanguevara/"}

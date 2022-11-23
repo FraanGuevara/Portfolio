@@ -50,6 +50,20 @@
     "contactCalendby":"Si te gusto mi perfil y quieres concretar una charla/entrevista podes solicitarla en mi Calendby.",
     "contactLinkedin":"Puedes seguirme en Linkedin para ver los proyectos en los que voy trabajando!"
 },
+"contactFormEmail":{
+    "title":"Envia un mensaje",
+    "placeholderName":"Escriba su nombre",
+    "placeholderEmail":"Escriba su email",
+    "placeholderText":"Escriba su consulta",
+    "buttonSend":"Enviar",
+    "sendMessageOk": "Mensaje enviado con exito !",
+    "sendMessageError": "Error, inténtalo de nuevo más tarde",
+    "errorName1":"Por favor ingrese un nombre",
+    "errorName2":"El nombre solo puede contener letras y espacios.",
+    "errorEmail1": "Por favor ingrese un correo electronico",
+    "errorEmail2": "Correo invalido, por favor ingrese un correo valido.",
+    "errorText": "Por favor ingrese su consulta"
+},
 "download":{
     "download":"https://drive.google.com/file/d/1yuUwBvLmQw_pg46XxlUNe1jSOJocJq8D/view?usp=sharing"
 }
