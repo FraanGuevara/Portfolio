@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ee11a245.css",
+    "main.js": "/static/js/main.5d5a2390.js",
+    "static/js/787.47af9b6a.chunk.js": "/static/js/787.47af9b6a.chunk.js",
+    "static/media/videoHome.mp4": "/static/media/videoHome.9a71cfafc0b6951b0ca8.mp4",
+    "static/media/giphy.webp": "/static/media/giphy.f5c37ebcadc3d8ff415d.webp",
+    "static/media/celular2.png": "/static/media/celular2.37dcd0c8ac21bdf1dcbc.png",
+    "static/media/LogoFG.png": "/static/media/LogoFG.3e63f27bfddc12871f5a.png",
+    "static/media/sapphireBar.JPG": "/static/media/sapphireBar.937b2bd843b4094e4834.JPG",
+    "static/media/arPilates.JPG": "/static/media/arPilates.3ac7d9fed6e9098b73a0.JPG",
+    "static/media/rosarioJobs.JPG": "/static/media/rosarioJobs.c6b0936503d0d064ceaa.JPG",
+    "static/media/AuraFlow.JPG": "/static/media/AuraFlow.aa755188345a33a79596.JPG",
+    "static/media/mimiPasteleria.JPG": "/static/media/mimiPasteleria.6affb9bf3bb71a2f53c2.JPG",
+    "static/media/gitHub.JPG": "/static/media/gitHub.8ace8136bc74835b641c.JPG",
+    "static/media/colorGame.JPG": "/static/media/colorGame.c6d0fc50bf8e1f9a937c.JPG",
+    "static/media/portfolio.JPG": "/static/media/portfolio.def54793178537dc9cf5.JPG",
+    "static/media/computadoraProyecto.webp": "/static/media/computadoraProyecto.1705271b35be4e9744da.webp",
+    "index.html": "/index.html",
+    "main.ee11a245.css.map": "/static/css/main.ee11a245.css.map",
+    "main.5d5a2390.js.map": "/static/js/main.5d5a2390.js.map",
+    "787.47af9b6a.chunk.js.map": "/static/js/787.47af9b6a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ee11a245.css",
+    "static/js/main.5d5a2390.js"
+  ]
+}
