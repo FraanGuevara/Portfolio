@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './Navbar';
+import Navbar from './NavBar';
 import PersistentDrawerLeft from './PersistentDrawerLeft';
 import { useMediaQuery } from 'react-responsive';
 

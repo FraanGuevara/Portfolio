@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Projects.module.css';
-import BotoneraCardCarousel from './BotoneraCardCarousel';
+import BotoneraCardCarousel from './botoneraCardCarousel';
 
 export default function ProjectCarrousel({ link, repositorio, setLinkIframe, tTitle, tText }) {
     return (
